@@ -1,0 +1,3121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centro Internacional de Ciencias A.C. — El Punto de Encuentro de las Ciencias · Cuernavaca, México</title>
+<meta name="description" content="El Centro Internacional de Ciencias A.C. (CIC), fundado en 1986 en Cuernavaca, México, es un espacio internacional para el diálogo y la colaboración entre físicos, matemáticos y biólogos. Organiza reuniones científicas, talleres, escuelas y conferencias.">
+<link rel="canonical" href="http://www.cicc.unam.mx/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#0f2044">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://www.cicc.unam.mx/">
+<meta property="og:title" content="Centro Internacional de Ciencias A.C. — CIC">
+<meta property="og:description" content="Espacio internacional para el diálogo científico entre física, matemáticas y biología. Campus UAEM-UNAM, Cuernavaca, México. Fundado en 1986.">
+<meta property="og:locale" content="es_MX">
+<!-- [AGREGAR IMAGEN OG OFICIAL DEL CIC] -->
+<!-- <meta property="og:image" content="http://www.cicc.unam.mx/og-image.jpg"> -->
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Centro Internacional de Ciencias A.C. — CIC">
+<meta name="twitter:description" content="Espacio internacional para el diálogo científico entre física, matemáticas y biología. Cuernavaca, México.">
+<!-- Favicon placeholder -->
+<!-- [AGREGAR FAVICON OFICIAL] -->
+<!-- <link rel="icon" type="image/svg+xml" href="favicon.svg"> -->
+
+<!-- Tipografías: Crimson Pro (editorial científica) + Inter (cuerpo legible) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ResearchOrganization",
+  "name": "Centro Internacional de Ciencias A.C.",
+  "alternateName": "CIC",
+  "url": "http://www.cicc.unam.mx/",
+  "foundingDate": "1986",
+  "description": "Centro fundado en 1986 por científicos mexicanos e internacionales para promover el intercambio científico entre físicos, matemáticos y biólogos mediante reuniones internacionales.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Avenida Universidad 1001, Campus UAEM-UNAM",
+    "addressLocality": "Cuernavaca",
+    "addressRegion": "Morelos",
+    "postalCode": "62131",
+    "addressCountry": "MX"
+  },
+  "telephone": "+52-777-329-1877",
+  "email": "cinzi@cicc.unam.mx",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+52-777-329-1877",
+    "email": "cinzi@cicc.unam.mx",
+    "contactType": "general"
+  },
+  "knowsAbout": ["Física", "Matemáticas", "Biología", "Sistemas Complejos", "Nanosistemas", "Econofísica", "Materia Condensada"]
+}
+</script>
+
+<style>
+/* ============================================================
+   VARIABLES Y RESET
+   ============================================================ */
+:root {
+  /* Paleta institucional */
+  --azul-profundo: #0f2044;
+  --azul-oscuro: #162d5a;
+  --azul-petroleo: #1a3a5c;
+  --azul-medio: #1e4d7b;
+  --azul-claro: #4a90c4;
+  --azul-acento: #6eb5e0;
+  --blanco-calido: #f8f6f2;
+  --blanco: #ffffff;
+  --gris-mineral: #6b7280;
+  --gris-claro: #e8e4dd;
+  --gris-fondo: #f2f0eb;
+  --dorado: #c9a84c;
+  --dorado-claro: #e0c06a;
+  --dorado-oscuro: #a8873a;
+  --texto-oscuro: #1a1f2e;
+  --texto-medio: #3d4a5c;
+  --texto-suave: #6b7a8d;
+  --borde: rgba(15, 32, 68, 0.12);
+  --borde-claro: rgba(255, 255, 255, 0.15);
+
+  /* Tipografía */
+  --fuente-titulo: 'Crimson Pro', Georgia, 'Times New Roman', serif;
+  --fuente-cuerpo: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Layout */
+  --maxw: 1180px;
+  --px: clamp(18px, 5vw, 60px);
+  --radio: 8px;
+  --radio-lg: 16px;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--fuente-cuerpo);
+  font-weight: 300;
+  color: var(--texto-oscuro);
+  background: var(--blanco-calido);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.65;
+}
+
+/* Skip link accesibilidad */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  background: var(--dorado);
+  color: var(--azul-profundo);
+  padding: 10px 20px;
+  font-weight: 600;
+  z-index: 9999;
+  text-decoration: none;
+  border-radius: 0 0 var(--radio) 0;
+  transition: top 0.2s;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* Focus visible global */
+:focus-visible {
+  outline: 2px solid var(--dorado);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+/* ============================================================
+   NAVEGACIÓN
+   ============================================================ */
+#nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  transition: background 0.35s, box-shadow 0.35s, border-color 0.35s;
+  border-bottom: 1px solid transparent;
+}
+
+#nav.scrolled {
+  background: rgba(15, 32, 68, 0.97);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.3);
+}
+
+.nav-inner {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 var(--px);
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.nav-logo-mark {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+
+.nav-logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.nav-logo-sigla {
+  font-family: var(--fuente-titulo);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--blanco);
+  letter-spacing: 0.05em;
+}
+
+.nav-logo-nombre {
+  font-size: 9px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.58);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2px;
+  align-items: center;
+}
+
+.nav-links a {
+  font-size: 12.5px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.72);
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  transition: color 0.2s, background 0.2s;
+  white-space: nowrap;
+}
+
+.nav-links a:hover,
+.nav-links a.activo {
+  color: var(--blanco);
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.nav-links a.activo {
+  color: var(--dorado-claro);
+}
+
+.nav-cta {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--dorado);
+  color: var(--azul-profundo) !important;
+  font-size: 12.5px !important;
+  font-weight: 600 !important;
+  padding: 8px 16px !important;
+  border-radius: 5px !important;
+  text-decoration: none;
+  flex-shrink: 0;
+  transition: background 0.2s, box-shadow 0.2s !important;
+  box-shadow: 0 0 18px rgba(201, 168, 76, 0.22);
+}
+
+.nav-cta:hover {
+  background: var(--dorado-claro) !important;
+  box-shadow: 0 4px 18px rgba(201, 168, 76, 0.38) !important;
+}
+
+/* Hamburguesa móvil */
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 6px;
+  border: none;
+  background: none;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.nav-hamburger:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.nav-hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--blanco);
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.nav-hamburger[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.nav-hamburger[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+.nav-hamburger[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Menú móvil overlay */
+.nav-mobile {
+  display: none;
+  position: fixed;
+  top: 68px;
+  left: 0;
+  right: 0;
+  background: rgba(15, 32, 68, 0.98);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 16px var(--px) 24px;
+  z-index: 199;
+  transform: translateY(-8px);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.nav-mobile.abierto {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+
+.nav-mobile-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.nav-mobile-links a {
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  padding: 11px 12px;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-mobile-links a:hover {
+  background: rgba(255, 255, 255, 0.07);
+  color: var(--blanco);
+}
+
+.nav-mobile-cta {
+  margin-top: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--dorado);
+  color: var(--azul-profundo);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 11px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.nav-mobile-cta:hover {
+  background: var(--dorado-claro);
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--azul-profundo);
+  overflow: hidden;
+  padding: 120px var(--px) 80px;
+}
+
+/* Fondo geométrico */
+.hero-fondo {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hero-gradiente {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 70% 60% at 15% 20%, rgba(30, 77, 123, 0.45), transparent 60%),
+    radial-gradient(ellipse 50% 50% at 85% 80%, rgba(26, 58, 92, 0.35), transparent 55%),
+    radial-gradient(ellipse 40% 40% at 50% 50%, rgba(201, 168, 76, 0.04), transparent 70%);
+}
+
+/* SVG animado del Punto de Fermat */
+.hero-svg {
+  position: absolute;
+  right: 4%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: clamp(280px, 40vw, 520px);
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fermat-linea,
+  .fermat-nodo,
+  .fermat-punto-central,
+  .fermat-circulo-ext {
+    animation: none !important;
+  }
+}
+
+/* Animación líneas convergiendo */
+@keyframes trazarLinea {
+  from { stroke-dashoffset: 400; }
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: scale(0); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes pulsoFermat {
+  0%, 100% { r: 8; opacity: 0.9; }
+  50% { r: 11; opacity: 1; }
+}
+
+@keyframes girarOrbit {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes flotarSutil {
+  0%, 100% { transform: translateY(-50%) translateX(0); }
+  50% { transform: translateY(calc(-50% - 8px)) translateX(3px); }
+}
+
+.hero-svg {
+  animation: flotarSutil 14s ease-in-out infinite;
+}
+
+.fermat-linea {
+  stroke-dasharray: 400;
+  animation: trazarLinea 1.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.fermat-linea-2 { animation-delay: 0.3s; }
+.fermat-linea-3 { animation-delay: 0.6s; }
+.fermat-linea-4 { animation-delay: 0.2s; }
+.fermat-linea-5 { animation-delay: 0.5s; }
+.fermat-linea-6 { animation-delay: 0.8s; }
+
+.fermat-nodo {
+  opacity: 0;
+  transform-origin: center;
+  animation: aparecer 0.5s ease forwards;
+}
+.fermat-nodo-1 { animation-delay: 0.4s; transform-origin: 130px 60px; }
+.fermat-nodo-2 { animation-delay: 0.7s; transform-origin: 30px 250px; }
+.fermat-nodo-3 { animation-delay: 1s; transform-origin: 250px 250px; }
+
+.fermat-punto-central {
+  opacity: 0;
+  transform-origin: 140px 190px;
+  animation: aparecer 0.6s ease 1.2s forwards;
+}
+
+.fermat-circulo-ext {
+  opacity: 0;
+  animation: aparecer 0.4s ease 1.5s forwards;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+
+.hero-etiqueta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--dorado-claro);
+  margin-bottom: 28px;
+  opacity: 0;
+  animation: fadeArriba 0.7s 0.1s ease forwards;
+}
+
+.hero-etiqueta::before {
+  content: '';
+  display: block;
+  width: 28px;
+  height: 1px;
+  background: var(--dorado);
+  flex-shrink: 0;
+}
+
+.hero-titulo {
+  font-family: var(--fuente-titulo);
+  font-size: clamp(34px, 4.5vw, 62px);
+  font-weight: 300;
+  line-height: 1.12;
+  color: var(--blanco);
+  margin-bottom: 24px;
+  opacity: 0;
+  animation: fadeArriba 0.7s 0.22s ease forwards;
+  letter-spacing: -0.01em;
+}
+
+.hero-titulo em {
+  font-style: italic;
+  color: var(--dorado-claro);
+  font-weight: 300;
+}
+
+.hero-subtitulo {
+  font-size: clamp(15px, 1.6vw, 18px);
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.68);
+  line-height: 1.75;
+  max-width: 520px;
+  margin-bottom: 42px;
+  opacity: 0;
+  animation: fadeArriba 0.7s 0.36s ease forwards;
+}
+
+.hero-botones {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: fadeArriba 0.7s 0.5s ease forwards;
+}
+
+.btn-primario {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--dorado);
+  color: var(--azul-profundo);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 13px 28px;
+  border-radius: var(--radio);
+  text-decoration: none;
+  transition: background 0.25s, box-shadow 0.25s, transform 0.2s;
+  box-shadow: 0 0 24px rgba(201, 168, 76, 0.28);
+  letter-spacing: 0.01em;
+}
+
+.btn-primario:hover {
+  background: var(--dorado-claro);
+  box-shadow: 0 6px 28px rgba(201, 168, 76, 0.42);
+  transform: translateY(-2px);
+}
+
+.btn-secundario {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+  font-weight: 400;
+  padding: 12px 24px;
+  border-radius: var(--radio);
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: border-color 0.25s, background 0.25s, color 0.25s;
+}
+
+.btn-secundario:hover {
+  border-color: rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--blanco);
+}
+
+/* Fundador badge */
+.hero-fundacion {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 52px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+  opacity: 0;
+  animation: fadeArriba 0.7s 0.65s ease forwards;
+}
+
+.hero-fundacion-num {
+  font-family: var(--fuente-titulo);
+  font-size: 38px;
+  font-weight: 300;
+  color: var(--dorado);
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.hero-fundacion-txt {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+
+@keyframes fadeArriba {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ============================================================
+   UTILIDADES DE SECCIÓN
+   ============================================================ */
+.sec {
+  padding: clamp(72px, 8vw, 108px) 0;
+}
+
+.sec-inner {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 var(--px);
+}
+
+.sec-etiqueta {
+  display: inline-block;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--dorado-oscuro);
+  margin-bottom: 12px;
+}
+
+.sec-titulo {
+  font-family: var(--fuente-titulo);
+  font-size: clamp(26px, 3vw, 42px);
+  font-weight: 400;
+  line-height: 1.18;
+  color: var(--azul-profundo);
+  margin-bottom: 16px;
+  letter-spacing: -0.01em;
+}
+
+.sec-titulo em {
+  font-style: italic;
+  color: var(--azul-medio);
+}
+
+.sec-subtitulo {
+  font-size: clamp(15px, 1.5vw, 17px);
+  font-weight: 300;
+  color: var(--texto-medio);
+  line-height: 1.75;
+  max-width: min(580px, 100%);
+}
+
+/* Secciones oscuras */
+.sec-oscura {
+  background: var(--azul-profundo);
+  color: var(--blanco);
+}
+
+.sec-oscura .sec-etiqueta {
+  color: var(--dorado-claro);
+}
+
+.sec-oscura .sec-titulo {
+  color: var(--blanco);
+}
+
+.sec-oscura .sec-subtitulo {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* Sección intermedia azul */
+.sec-azul {
+  background: var(--azul-oscuro);
+}
+
+/* Sección gris cálido */
+.sec-gris {
+  background: var(--gris-fondo);
+}
+
+/* ============================================================
+   REVEAL ANIMATIONS
+   ============================================================ */
+.rv {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1), transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform, opacity;
+}
+
+.rv.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rv {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ============================================================
+   SECCIÓN MISIÓN (ACERCA)
+   ============================================================ */
+.mision-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: start;
+  margin-top: 52px;
+}
+
+.mision-texto h3 {
+  font-family: var(--fuente-titulo);
+  font-size: clamp(18px, 1.8vw, 22px);
+  font-weight: 600;
+  color: var(--azul-profundo);
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+
+.mision-texto p {
+  font-size: 15.5px;
+  color: var(--texto-medio);
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.mision-texto p:last-child {
+  margin-bottom: 0;
+}
+
+.mision-texto .cita-fermat {
+  background: var(--gris-fondo);
+  border-left: 3px solid var(--dorado);
+  padding: 20px 22px;
+  border-radius: 0 var(--radio) var(--radio) 0;
+  margin: 24px 0;
+}
+
+.mision-texto .cita-fermat p {
+  font-family: var(--fuente-titulo);
+  font-size: 17px;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--azul-profundo);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.mision-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--azul-medio);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(30, 77, 123, 0.3);
+  padding-bottom: 2px;
+  transition: color 0.2s, border-color 0.2s;
+  margin-top: 12px;
+}
+
+.mision-link:hover {
+  color: var(--dorado-oscuro);
+  border-bottom-color: var(--dorado);
+}
+
+/* SVG composición científica de misión */
+.mision-visual {
+  position: relative;
+}
+
+.mision-svg-wrap {
+  background: var(--azul-profundo);
+  border-radius: var(--radio-lg);
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  max-width: 400px;
+  /* [AGREGAR FOTOGRAFÍA OFICIAL DEL CIC] */
+}
+
+.datos-fundacion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.dato-fundacion {
+  background: var(--gris-fondo);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+  padding: 16px 18px;
+}
+
+.dato-num {
+  font-family: var(--fuente-titulo);
+  font-size: 28px;
+  font-weight: 300;
+  color: var(--azul-profundo);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.dato-label {
+  font-size: 11px;
+  color: var(--texto-suave);
+  letter-spacing: 0.06em;
+  line-height: 1.4;
+}
+
+/* ============================================================
+   ÁREAS CIENTÍFICAS
+   ============================================================ */
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 52px;
+}
+
+.area-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radio-lg);
+  padding: 28px 22px;
+  transition: background 0.25s, border-color 0.25s, transform 0.25s;
+  position: relative;
+  overflow: hidden;
+}
+
+.area-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--dorado), var(--azul-acento));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.area-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-4px);
+}
+
+.area-card:hover::before {
+  transform: scaleX(1);
+}
+
+.area-icono {
+  width: 44px;
+  height: 44px;
+  background: rgba(201, 168, 76, 0.12);
+  border: 1px solid rgba(201, 168, 76, 0.2);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.area-nombre {
+  font-family: var(--fuente-titulo);
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--blanco);
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.area-desc {
+  font-size: 13.5px;
+  color: rgba(255, 255, 255, 0.58);
+  line-height: 1.65;
+  margin-bottom: 14px;
+}
+
+.area-temas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.area-tema {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: rgba(201, 168, 76, 0.8);
+  background: rgba(201, 168, 76, 0.08);
+  border: 1px solid rgba(201, 168, 76, 0.15);
+  padding: 3px 8px;
+  border-radius: 3px;
+}
+
+/* ============================================================
+   PRÓXIMAS ACTIVIDADES
+   ============================================================ */
+.actividades-cabeza {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.estado-vacio {
+  text-align: center;
+  padding: 72px 32px;
+  background: var(--gris-fondo);
+  border: 1px dashed rgba(15, 32, 68, 0.2);
+  border-radius: var(--radio-lg);
+}
+
+.estado-vacio-icono {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  opacity: 0.35;
+}
+
+.estado-vacio h3 {
+  font-family: var(--fuente-titulo);
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--azul-profundo);
+  margin-bottom: 10px;
+}
+
+.estado-vacio p {
+  font-size: 14px;
+  color: var(--texto-suave);
+  max-width: 360px;
+  margin: 0 auto 24px;
+  line-height: 1.7;
+}
+
+.btn-archivo {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--azul-profundo);
+  color: var(--blanco);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 11px 22px;
+  border-radius: var(--radio);
+  text-decoration: none;
+  transition: background 0.25s, transform 0.2s;
+}
+
+.btn-archivo:hover {
+  background: var(--azul-medio);
+  transform: translateY(-2px);
+}
+
+/* ============================================================
+   ARCHIVO ACADÉMICO
+   ============================================================ */
+.archivo-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+
+.archivo-anio-btn {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 7px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+  font-family: var(--fuente-cuerpo);
+}
+
+.archivo-anio-btn:hover,
+.archivo-anio-btn.seleccionado {
+  background: rgba(201, 168, 76, 0.15);
+  border-color: rgba(201, 168, 76, 0.35);
+  color: var(--dorado-claro);
+}
+
+.archivo-panel {
+  display: none;
+}
+
+.archivo-panel.activo {
+  display: block;
+}
+
+.archivo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.archivo-tarjeta {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: var(--radio-lg);
+  padding: 22px 20px;
+  transition: border-color 0.25s, background 0.25s;
+  position: relative;
+}
+
+.archivo-tarjeta:hover {
+  border-color: rgba(201, 168, 76, 0.3);
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.archivo-tipo {
+  display: inline-block;
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 3px;
+  margin-bottom: 12px;
+}
+
+.tipo-conferencia { color: #7eb8e8; background: rgba(126, 184, 232, 0.1); border: 1px solid rgba(126, 184, 232, 0.2); }
+.tipo-taller { color: var(--dorado-claro); background: rgba(201, 168, 76, 0.1); border: 1px solid rgba(201, 168, 76, 0.2); }
+.tipo-escuela { color: #88d8b0; background: rgba(136, 216, 176, 0.1); border: 1px solid rgba(136, 216, 176, 0.2); }
+.tipo-reunion { color: #d4a8e0; background: rgba(212, 168, 224, 0.1); border: 1px solid rgba(212, 168, 224, 0.2); }
+
+.archivo-fecha {
+  font-size: 11.5px;
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+.archivo-titulo {
+  font-family: var(--fuente-titulo);
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--blanco);
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+.archivo-enlace {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: var(--azul-acento);
+  text-decoration: none;
+  margin-top: 12px;
+  transition: color 0.2s, gap 0.2s;
+}
+
+.archivo-enlace:hover {
+  color: var(--dorado-claro);
+  gap: 8px;
+}
+
+.archivo-linea-temporal {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+  scrollbar-width: thin;
+}
+
+.archivo-linea-temporal::-webkit-scrollbar {
+  height: 3px;
+}
+.archivo-linea-temporal::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+.archivo-linea-temporal::-webkit-scrollbar-thumb {
+  background: rgba(201, 168, 76, 0.3);
+  border-radius: 3px;
+}
+
+.archivo-linea-punt {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.archivo-linea-circulo {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.archivo-linea-circulo.activo {
+  background: var(--dorado);
+  border-color: var(--dorado);
+}
+
+.archivo-linea-conector {
+  width: 20px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  flex-shrink: 0;
+}
+
+.archivo-nota {
+  text-align: center;
+  margin-top: 28px;
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: var(--radio);
+}
+
+.archivo-nota p {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.45);
+  margin-bottom: 12px;
+}
+
+/* ============================================================
+   EXPERIENCIA EN EL CIC
+   ============================================================ */
+.pasos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--borde);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio-lg);
+  overflow: hidden;
+  margin-top: 52px;
+}
+
+.paso {
+  background: var(--blanco);
+  padding: 36px 26px;
+  position: relative;
+  transition: background 0.25s;
+}
+
+.paso:hover {
+  background: var(--blanco-calido);
+}
+
+.paso-num {
+  font-family: var(--fuente-titulo);
+  font-size: 42px;
+  font-weight: 300;
+  color: rgba(15, 32, 68, 0.08);
+  line-height: 1;
+  margin-bottom: 14px;
+  letter-spacing: -0.02em;
+}
+
+.paso-icono {
+  width: 40px;
+  height: 40px;
+  background: var(--azul-profundo);
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.paso h3 {
+  font-family: var(--fuente-titulo);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--azul-profundo);
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.paso p {
+  font-size: 13.5px;
+  color: var(--texto-medio);
+  line-height: 1.7;
+}
+
+/* ============================================================
+   COMUNIDAD CIENTÍFICA
+   ============================================================ */
+.comunidad-bloque {
+  margin-top: 52px;
+}
+
+.comunidad-subtitulo {
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--dorado-claro);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.comunidad-subtitulo::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Directivos */
+.directivos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.directivo-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: var(--radio-lg);
+  padding: 24px 20px;
+  transition: border-color 0.2s;
+}
+
+.directivo-card:hover {
+  border-color: rgba(201, 168, 76, 0.25);
+}
+
+.directivo-foto {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  overflow: hidden;
+  /* [AGREGAR FOTOGRAFÍA DEL DIRECTIVO] */
+}
+
+.directivo-cargo {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--dorado-claro);
+  margin-bottom: 5px;
+}
+
+.directivo-nombre {
+  font-family: var(--fuente-titulo);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--blanco);
+  line-height: 1.3;
+  margin-bottom: 4px;
+}
+
+.directivo-inst {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.5;
+}
+
+.directivo-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11.5px;
+  color: var(--azul-acento);
+  text-decoration: none;
+  margin-top: 8px;
+  transition: color 0.2s;
+  word-break: break-all;
+}
+
+.directivo-email:hover {
+  color: var(--dorado-claro);
+}
+
+/* Miembros lista */
+.miembros-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+.miembro-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.miembro-punto {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--dorado);
+  flex-shrink: 0;
+  margin-top: 8px;
+}
+
+.miembro-nombre {
+  font-size: 13.5px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.4;
+}
+
+.miembro-inst {
+  font-size: 11.5px;
+  color: rgba(255, 255, 255, 0.38);
+  margin-top: 2px;
+}
+
+/* Instituciones */
+.instituciones-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.inst-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radio);
+  padding: 18px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: background 0.2s, border-color 0.2s;
+  /* [AGREGAR LOGOTIPO OFICIAL DE LA INSTITUCIÓN] */
+}
+
+.inst-card:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.inst-logo-placeholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 11px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.05em;
+}
+
+.inst-nombre {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.4;
+}
+
+/* ============================================================
+   UBICACIÓN
+   ============================================================ */
+.ubicacion-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 52px;
+  align-items: start;
+  margin-top: 52px;
+}
+
+.ubicacion-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ubicacion-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.ubicacion-icono {
+  width: 40px;
+  height: 40px;
+  background: var(--gris-fondo);
+  border: 1px solid var(--borde);
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.ubicacion-label {
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--texto-suave);
+  margin-bottom: 3px;
+}
+
+.ubicacion-valor {
+  font-size: 14.5px;
+  color: var(--texto-oscuro);
+  line-height: 1.55;
+}
+
+.ubicacion-valor a {
+  color: var(--azul-medio);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(30, 77, 123, 0.25);
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.ubicacion-valor a:hover {
+  color: var(--dorado-oscuro);
+  border-bottom-color: var(--dorado);
+}
+
+.btn-mapa {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--azul-profundo);
+  color: var(--blanco);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 22px;
+  border-radius: var(--radio);
+  text-decoration: none;
+  transition: background 0.25s, transform 0.2s;
+  margin-top: 8px;
+  align-self: flex-start;
+}
+
+.btn-mapa:hover {
+  background: var(--azul-medio);
+  transform: translateY(-2px);
+}
+
+/* Mapa placeholder */
+.mapa-placeholder {
+  background: var(--gris-fondo);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio-lg);
+  aspect-ratio: 4/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--texto-suave);
+  /* Mapa estático sin clave de API */
+  overflow: hidden;
+}
+
+.mapa-placeholder svg {
+  opacity: 0.3;
+}
+
+.mapa-placeholder p {
+  font-size: 13px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* ============================================================
+   CTA FINAL
+   ============================================================ */
+.cta-final {
+  text-align: center;
+  padding: clamp(80px, 10vw, 120px) var(--px);
+  background: var(--azul-profundo);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-final::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 80% at 50% 50%, rgba(30, 77, 123, 0.4), transparent 60%),
+    radial-gradient(ellipse 40% 40% at 80% 20%, rgba(201, 168, 76, 0.06), transparent 55%);
+  pointer-events: none;
+}
+
+.cta-final-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 660px;
+  margin: 0 auto;
+}
+
+.cta-final h2 {
+  font-family: var(--fuente-titulo);
+  font-size: clamp(28px, 3.5vw, 46px);
+  font-weight: 300;
+  color: var(--blanco);
+  line-height: 1.18;
+  margin-bottom: 20px;
+  letter-spacing: -0.01em;
+}
+
+.cta-final h2 em {
+  font-style: italic;
+  color: var(--dorado-claro);
+}
+
+.cta-final p {
+  font-size: clamp(15px, 1.5vw, 18px);
+  color: rgba(255, 255, 255, 0.62);
+  line-height: 1.75;
+  margin-bottom: 40px;
+}
+
+.cta-botones {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+footer {
+  background: #080f1e;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer-top {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 52px var(--px) 36px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.footer-marca {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer-logo-txt {
+  font-family: var(--fuente-titulo);
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--blanco);
+  letter-spacing: 0.03em;
+}
+
+.footer-descripcion {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.42);
+  line-height: 1.7;
+  max-width: 280px;
+}
+
+.footer-contacto-mini {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.footer-contacto-mini a {
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.45);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  transition: color 0.2s;
+}
+
+.footer-contacto-mini a:hover {
+  color: var(--dorado-claro);
+}
+
+.footer-col h4 {
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.35);
+  margin-bottom: 16px;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-nav a {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-nav a:hover {
+  color: var(--dorado-claro);
+}
+
+.footer-bottom {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 20px var(--px);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer-bottom span,
+.footer-bottom a {
+  font-size: 11.5px;
+  color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ============================================================
+   BOTÓN VOLVER ARRIBA
+   ============================================================ */
+#btn-arriba {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--azul-profundo);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--blanco);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 150;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.3s, transform 0.3s, background 0.2s;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+}
+
+#btn-arriba.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#btn-arriba:hover {
+  background: var(--azul-medio);
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1024px) {
+  .mision-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .mision-svg-wrap {
+    max-width: 100%;
+    aspect-ratio: 4/3;
+  }
+  .pasos-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  .footer-marca {
+    grid-column: span 2;
+  }
+  .miembros-cols {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links, .nav-cta {
+    display: none;
+  }
+  .nav-hamburger {
+    display: flex;
+  }
+  .nav-mobile.abierto {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-svg {
+    display: none;
+  }
+  .hero {
+    text-align: center;
+    padding: 100px var(--px) 60px;
+  }
+  .hero-etiqueta {
+    justify-content: center;
+  }
+  .hero-botones {
+    justify-content: center;
+  }
+  .hero-fundacion {
+    justify-content: center;
+  }
+  .pasos-grid {
+    grid-template-columns: 1fr;
+  }
+  .ubicacion-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .datos-fundacion {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
+  .footer-marca {
+    grid-column: auto;
+  }
+  .directivos-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-botones {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .btn-primario, .btn-secundario {
+    justify-content: center;
+  }
+  .cta-botones {
+    flex-direction: column;
+    align-items: center;
+  }
+  .areas-grid {
+    grid-template-columns: 1fr;
+  }
+  .directivos-grid {
+    grid-template-columns: 1fr;
+  }
+  .datos-fundacion {
+    grid-template-columns: 1fr;
+  }
+  .instituciones-grid {
+    grid-template-columns: 1fr;
+  }
+  #btn-arriba {
+    bottom: 16px;
+    right: 16px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Saltar al contenido principal -->
+<a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+
+<!-- ============================================================
+     NAVEGACIÓN
+     ============================================================ -->
+<nav id="nav" role="navigation" aria-label="Navegación principal">
+  <div class="nav-inner">
+    <a href="#inicio" class="nav-logo" aria-label="Centro Internacional de Ciencias A.C. — Inicio">
+      <!-- Logo SVG del CIC: Punto de Fermat estilizado -->
+      <svg class="nav-logo-mark" viewBox="0 0 36 36" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="18" cy="18" r="17" stroke="rgba(201,168,76,0.35)" stroke-width="1"/>
+        <!-- Triángulo Fermat -->
+        <line x1="18" y1="5" x2="6" y2="28" stroke="rgba(201,168,76,0.7)" stroke-width="1.2"/>
+        <line x1="18" y1="5" x2="30" y2="28" stroke="rgba(201,168,76,0.7)" stroke-width="1.2"/>
+        <line x1="6" y1="28" x2="30" y2="28" stroke="rgba(201,168,76,0.7)" stroke-width="1.2"/>
+        <!-- Punto central de Fermat -->
+        <circle cx="18" cy="18" r="3" fill="#c9a84c"/>
+        <!-- Líneas de convergencia -->
+        <line x1="18" y1="5" x2="18" y2="18" stroke="rgba(255,255,255,0.3)" stroke-width="0.8" stroke-dasharray="2 2"/>
+        <line x1="6" y1="28" x2="18" y2="18" stroke="rgba(255,255,255,0.3)" stroke-width="0.8" stroke-dasharray="2 2"/>
+        <line x1="30" y1="28" x2="18" y2="18" stroke="rgba(255,255,255,0.3)" stroke-width="0.8" stroke-dasharray="2 2"/>
+      </svg>
+      <div class="nav-logo-text">
+        <span class="nav-logo-sigla">CIC</span>
+        <span class="nav-logo-nombre">Centro Int. de Ciencias</span>
+      </div>
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#acerca">Acerca del CIC</a></li>
+      <li><a href="#areas">Áreas científicas</a></li>
+      <li><a href="#actividades">Actividades</a></li>
+      <li><a href="#archivo">Archivo histórico</a></li>
+      <li><a href="#comunidad">Comunidad</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="http://www.cicc.unam.mx/activities/" class="nav-cta" target="_blank" rel="noopener">Consultar actividades</a></li>
+    </ul>
+
+    <button class="nav-hamburger" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="nav-mobile" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Menú móvil -->
+<div class="nav-mobile" id="nav-mobile" role="dialog" aria-label="Menú de navegación">
+  <ul class="nav-mobile-links" role="list">
+    <li><a href="#inicio" class="nav-mobile-link">Inicio</a></li>
+    <li><a href="#acerca" class="nav-mobile-link">Acerca del CIC</a></li>
+    <li><a href="#areas" class="nav-mobile-link">Áreas científicas</a></li>
+    <li><a href="#actividades" class="nav-mobile-link">Próximas actividades</a></li>
+    <li><a href="#archivo" class="nav-mobile-link">Archivo histórico</a></li>
+    <li><a href="#comunidad" class="nav-mobile-link">Comunidad</a></li>
+    <li><a href="#contacto" class="nav-mobile-link">Ubicación y contacto</a></li>
+  </ul>
+  <a href="http://www.cicc.unam.mx/activities/" class="nav-mobile-cta" target="_blank" rel="noopener">
+    Consultar actividades
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+  </a>
+</div>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<main id="contenido-principal">
+<section class="hero" id="inicio" aria-label="Presentación del Centro Internacional de Ciencias">
+  <div class="hero-fondo" aria-hidden="true">
+    <div class="hero-gradiente"></div>
+    <!-- Cuadrícula de fondo sutil -->
+    <svg style="position:absolute;inset:0;width:100%;height:100%;opacity:0.04" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+          <path d="M 48 0 L 0 0 0 48" fill="none" stroke="white" stroke-width="0.5"/>
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#grid)"/>
+    </svg>
+  </div>
+
+  <!-- SVG Animado: Punto de Fermat -->
+  <svg class="hero-svg" viewBox="0 0 290 340" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+    <defs>
+      <radialGradient id="glowFermat" cx="50%" cy="56%" r="45%">
+        <stop offset="0%" stop-color="#c9a84c" stop-opacity="0.25"/>
+        <stop offset="100%" stop-color="#0f2044" stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="nodGlow" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#6eb5e0" stop-opacity="0.8"/>
+        <stop offset="100%" stop-color="#6eb5e0" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+
+    <!-- Fondo de resplandor -->
+    <ellipse cx="145" cy="190" rx="130" ry="140" fill="url(#glowFermat)"/>
+
+    <!-- Círculos exteriores a los tres nodos (circunscritos) -->
+    <circle class="fermat-circulo-ext" cx="140" cy="60" r="42" stroke="rgba(110,181,224,0.12)" stroke-width="1" fill="none" stroke-dasharray="4 4"/>
+    <circle class="fermat-circulo-ext" cx="38" cy="256" r="42" stroke="rgba(110,181,224,0.12)" stroke-width="1" fill="none" stroke-dasharray="4 4"/>
+    <circle class="fermat-circulo-ext" cx="252" cy="256" r="42" stroke="rgba(110,181,224,0.12)" stroke-width="1" fill="none" stroke-dasharray="4 4"/>
+
+    <!-- Triángulo principal -->
+    <line class="fermat-linea fermat-linea-1" x1="140" y1="60" x2="38" y2="256" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
+    <line class="fermat-linea fermat-linea-2" x1="140" y1="60" x2="252" y2="256" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
+    <line class="fermat-linea fermat-linea-3" x1="38" y1="256" x2="252" y2="256" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
+
+    <!-- Líneas de convergencia al Punto de Fermat -->
+    <line class="fermat-linea fermat-linea-4" x1="140" y1="60" x2="145" y2="190" stroke="rgba(201,168,76,0.55)" stroke-width="1.2" stroke-dasharray="5 3"/>
+    <line class="fermat-linea fermat-linea-5" x1="38" y1="256" x2="145" y2="190" stroke="rgba(201,168,76,0.55)" stroke-width="1.2" stroke-dasharray="5 3"/>
+    <line class="fermat-linea fermat-linea-6" x1="252" y1="256" x2="145" y2="190" stroke="rgba(201,168,76,0.55)" stroke-width="1.2" stroke-dasharray="5 3"/>
+
+    <!-- Nodo 1: Física -->
+    <g class="fermat-nodo fermat-nodo-1">
+      <circle cx="140" cy="60" r="28" fill="rgba(15,32,68,0.9)" stroke="rgba(110,181,224,0.6)" stroke-width="1.5"/>
+      <circle cx="140" cy="60" r="20" fill="rgba(30,77,123,0.5)" stroke="rgba(110,181,224,0.25)" stroke-width="0.8"/>
+      <text x="140" y="57" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.9)" font-family="Georgia,serif" font-style="italic">Φ</text>
+      <text x="140" y="70" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.5)" font-family="Arial,sans-serif" letter-spacing="1">FÍSICA</text>
+    </g>
+
+    <!-- Nodo 2: Matemáticas -->
+    <g class="fermat-nodo fermat-nodo-2">
+      <circle cx="38" cy="256" r="28" fill="rgba(15,32,68,0.9)" stroke="rgba(110,181,224,0.6)" stroke-width="1.5"/>
+      <circle cx="38" cy="256" r="20" fill="rgba(30,77,123,0.5)" stroke="rgba(110,181,224,0.25)" stroke-width="0.8"/>
+      <text x="38" y="253" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.9)" font-family="Georgia,serif" font-style="italic">Σ</text>
+      <text x="38" y="266" text-anchor="middle" font-size="6.5" fill="rgba(255,255,255,0.5)" font-family="Arial,sans-serif" letter-spacing="0.5">MATEM.</text>
+    </g>
+
+    <!-- Nodo 3: Biología -->
+    <g class="fermat-nodo fermat-nodo-3">
+      <circle cx="252" cy="256" r="28" fill="rgba(15,32,68,0.9)" stroke="rgba(110,181,224,0.6)" stroke-width="1.5"/>
+      <circle cx="252" cy="256" r="20" fill="rgba(30,77,123,0.5)" stroke="rgba(110,181,224,0.25)" stroke-width="0.8"/>
+      <text x="252" y="253" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.9)" font-family="Georgia,serif" font-style="italic">β</text>
+      <text x="252" y="266" text-anchor="middle" font-size="7.5" fill="rgba(255,255,255,0.5)" font-family="Arial,sans-serif" letter-spacing="1">BIOLOG.</text>
+    </g>
+
+    <!-- Punto Central de Fermat -->
+    <g class="fermat-punto-central">
+      <circle cx="145" cy="190" r="22" fill="rgba(201,168,76,0.08)" stroke="rgba(201,168,76,0.3)" stroke-width="1"/>
+      <circle cx="145" cy="190" r="14" fill="rgba(201,168,76,0.14)" stroke="rgba(201,168,76,0.5)" stroke-width="1.2"/>
+      <circle cx="145" cy="190" r="6" fill="#c9a84c">
+        <animate attributeName="r" values="6;9;6" dur="3s" repeatCount="indefinite" calcMode="ease-in-out"/>
+        <animate attributeName="opacity" values="1;0.7;1" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <!-- Etiqueta CIC -->
+      <text x="145" y="223" text-anchor="middle" font-size="9" fill="rgba(201,168,76,0.8)" font-family="Georgia,serif" letter-spacing="2">CIC</text>
+    </g>
+
+    <!-- Ondas de campo desde el punto central -->
+    <circle cx="145" cy="190" r="45" stroke="rgba(201,168,76,0.06)" stroke-width="1" fill="none">
+      <animate attributeName="r" values="30;70;30" dur="5s" repeatCount="indefinite" calcMode="ease-in-out"/>
+      <animate attributeName="opacity" values="0.2;0;0.2" dur="5s" repeatCount="indefinite"/>
+    </circle>
+  </svg>
+
+  <!-- Contenido del hero -->
+  <div class="hero-content">
+    <div class="hero-etiqueta" aria-label="Ubicación institucional">
+      Centro Internacional de Ciencias A.C. · Cuernavaca, México
+    </div>
+
+    <h1 class="hero-titulo">
+      Donde las ciencias<br>
+      <em>encuentran un punto en común.</em>
+    </h1>
+
+    <p class="hero-subtitulo">
+      Un espacio internacional para el diálogo, la colaboración y el desarrollo de nuevas ideas entre la física, las matemáticas, la biología y otras disciplinas. Fundado en 1986 en Cuernavaca, México.
+    </p>
+
+    <div class="hero-botones">
+      <a href="#actividades" class="btn-primario">
+        Explorar actividades
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#acerca" class="btn-secundario">
+        Conocer el Centro
+      </a>
+    </div>
+
+    <div class="hero-fundacion" aria-label="Año de fundación">
+      <div class="hero-fundacion-num">1986</div>
+      <div class="hero-fundacion-txt">
+        Fundado por un grupo de científicos<br>mexicanos e internacionales
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ACERCA DEL CIC
+     ============================================================ -->
+<section class="sec" id="acerca" aria-labelledby="titulo-acerca">
+  <div class="sec-inner">
+    <div class="rv">
+      <span class="sec-etiqueta">Acerca del CIC</span>
+      <h2 class="sec-titulo" id="titulo-acerca">Un centro creado para<br><em>conectar disciplinas</em></h2>
+    </div>
+
+    <div class="mision-grid">
+      <div class="mision-texto rv">
+        <h3>El Punto de Fermat de las ciencias</h3>
+
+        <div class="cita-fermat">
+          <p>La misión del Centro Internacional de Ciencias es buscar siempre el Punto de Fermat entre físicos, matemáticos y biólogos, mediante reuniones internacionales en las que científicos interesados en un tema particular interactúan y colaboran.</p>
+        </div>
+
+        <p>El Punto de Fermat de un triángulo es el punto cuya suma de distancias a los tres vértices es mínima. Es el lugar de menor resistencia, el espacio donde las trayectorias convergen naturalmente. Esta metáfora matemática define la filosofía del CIC: crear el entorno donde diferentes disciplinas se encuentran sin fricciones.</p>
+
+        <p>El Centro Internacional de Ciencias se ubica en el Campus UAEM-UNAM de Cuernavaca, junto al Instituto de Biotecnología. Desde 1986, organiza reuniones científicas de diferente duración —desde unos días hasta seis meses— en un ambiente propicio para el intercambio académico profundo.</p>
+
+        <a href="http://www.cicc.unam.mx/mission.html" class="mision-link" target="_blank" rel="noopener" aria-label="Leer la misión completa del CIC en el sitio oficial">
+          Leer la misión completa
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="mision-visual rv" style="transition-delay: 0.12s">
+        <!-- Composición visual CIC — [AGREGAR FOTOGRAFÍA OFICIAL DEL CIC] -->
+        <div class="mision-svg-wrap" role="img" aria-label="Diagrama del Punto de Fermat representando la misión del CIC">
+          <svg viewBox="0 0 260 260" fill="none" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width:280px">
+            <!-- Anillos de campo -->
+            <circle cx="130" cy="130" r="115" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+            <circle cx="130" cy="130" r="90" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+            <circle cx="130" cy="130" r="65" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+            <!-- Cruz de ejes cartesianos -->
+            <line x1="15" y1="130" x2="245" y2="130" stroke="rgba(255,255,255,0.06)" stroke-width="0.8"/>
+            <line x1="130" y1="15" x2="130" y2="245" stroke="rgba(255,255,255,0.06)" stroke-width="0.8"/>
+            <!-- Triángulo -->
+            <polygon points="130,30 30,210 230,210" stroke="rgba(201,168,76,0.5)" stroke-width="1.4" fill="none"/>
+            <!-- Líneas al punto de Fermat -->
+            <line x1="130" y1="30" x2="130" y2="143" stroke="rgba(201,168,76,0.4)" stroke-width="1" stroke-dasharray="4 3"/>
+            <line x1="30" y1="210" x2="130" y2="143" stroke="rgba(201,168,76,0.4)" stroke-width="1" stroke-dasharray="4 3"/>
+            <line x1="230" y1="210" x2="130" y2="143" stroke="rgba(201,168,76,0.4)" stroke-width="1" stroke-dasharray="4 3"/>
+            <!-- Nodos vértice -->
+            <circle cx="130" cy="30" r="8" fill="rgba(110,181,224,0.2)" stroke="rgba(110,181,224,0.7)" stroke-width="1.5"/>
+            <circle cx="30" cy="210" r="8" fill="rgba(110,181,224,0.2)" stroke="rgba(110,181,224,0.7)" stroke-width="1.5"/>
+            <circle cx="230" cy="210" r="8" fill="rgba(110,181,224,0.2)" stroke="rgba(110,181,224,0.7)" stroke-width="1.5"/>
+            <!-- Punto de Fermat -->
+            <circle cx="130" cy="143" r="12" fill="rgba(201,168,76,0.15)" stroke="rgba(201,168,76,0.8)" stroke-width="2"/>
+            <circle cx="130" cy="143" r="5" fill="#c9a84c"/>
+            <!-- Etiquetas -->
+            <text x="130" y="18" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)" font-family="Georgia,serif" font-style="italic">Física</text>
+            <text x="14" y="226" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)" font-family="Georgia,serif" font-style="italic">Mat.</text>
+            <text x="240" y="226" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)" font-family="Georgia,serif" font-style="italic">Biol.</text>
+            <text x="130" y="165" text-anchor="middle" font-size="8" fill="rgba(201,168,76,0.8)" font-family="Arial,sans-serif" letter-spacing="1.5">CIC</text>
+          </svg>
+          <!-- [AGREGAR FOTOGRAFÍA OFICIAL DEL CIC: vista de las instalaciones o una sesión científica] -->
+        </div>
+
+        <div class="datos-fundacion">
+          <div class="dato-fundacion">
+            <div class="dato-num">1986</div>
+            <div class="dato-label">Año de fundación</div>
+          </div>
+          <div class="dato-fundacion">
+            <div class="dato-num">28+</div>
+            <div class="dato-label">Años de actividad académica</div>
+          </div>
+          <div class="dato-fundacion">
+            <div class="dato-num">3</div>
+            <div class="dato-label">Disciplinas centrales</div>
+          </div>
+          <div class="dato-fundacion">
+            <div class="dato-num">Int'l</div>
+            <div class="dato-label">Comunidad científica global</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ÁREAS CIENTÍFICAS
+     ============================================================ -->
+<section class="sec sec-oscura" id="areas" aria-labelledby="titulo-areas">
+  <div class="sec-inner">
+    <div class="rv">
+      <span class="sec-etiqueta">Áreas de conocimiento</span>
+      <h2 class="sec-titulo" id="titulo-areas">Las disciplinas que<br><em>convergen en el CIC</em></h2>
+      <p class="sec-subtitulo">Las siguientes áreas reflejan los temas abordados en actividades académicas verificadas del Centro. No constituyen departamentos formales.</p>
+    </div>
+
+    <div class="areas-grid">
+
+      <!-- Física -->
+      <div class="area-card rv" style="transition-delay:0.04s">
+        <div class="area-icono" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(201,168,76,0.9)" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(0 12 12)"/>
+            <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/>
+            <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/>
+            <circle cx="12" cy="12" r="1.5" fill="rgba(201,168,76,0.9)" stroke="none"/>
+          </svg>
+        </div>
+        <div class="area-nombre">Física</div>
+        <div class="area-desc">Materia condensada, sistemas cuánticos, física estadística y fenómenos complejos. Área central desde la fundación del CIC.</div>
+        <div class="area-temas">
+          <span class="area-tema">Materia condensada</span>
+          <span class="area-tema">Física cuántica</span>
+          <span class="area-tema">Nanosistemas</span>
+          <span class="area-tema">Transporte</span>
+        </div>
+      </div>
+
+      <!-- Matemáticas -->
+      <div class="area-card rv" style="transition-delay:0.08s">
+        <div class="area-icono" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(201,168,76,0.9)" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 12h20M12 2v20"/>
+            <path d="M6 6l12 12M18 6L6 18" stroke-opacity="0.5"/>
+          </svg>
+        </div>
+        <div class="area-nombre">Matemáticas</div>
+        <div class="area-desc">Álgebra, geometría, análisis y modelos matemáticos aplicados a problemas de otras disciplinas científicas.</div>
+        <div class="area-temas">
+          <span class="area-tema">Teoría de matrices</span>
+          <span class="area-tema">Modelación</span>
+          <span class="area-tema">Álgebra</span>
+          <span class="area-tema">RMT</span>
+        </div>
+      </div>
+
+      <!-- Biología -->
+      <div class="area-card rv" style="transition-delay:0.12s">
+        <div class="area-icono" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(201,168,76,0.9)" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C8 2 4 5 4 9c0 5 4 8 8 13 4-5 8-8 8-13 0-4-4-7-8-7z"/>
+            <path d="M12 2v20" stroke-opacity="0.4"/>
+          </svg>
+        </div>
+        <div class="area-nombre">Biología</div>
+        <div class="area-desc">Biotecnología, biología celular, genómica y ciencias de la vida. Colaboración estrecha con el Instituto de Biotecnología UNAM.</div>
+        <div class="area-temas">
+          <span class="area-tema">Biotecnología</span>
+          <span class="area-tema">Genómica</span>
+          <span class="area-tema">Biofísica</span>
+          <span class="area-tema">Fisiología celular</span>
+        </div>
+      </div>
+
+      <!-- Sistemas complejos -->
+      <div class="area-card rv" style="transition-delay:0.16s">
+        <div class="area-icono" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(201,168,76,0.9)" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="5" cy="5" r="2"/><circle cx="19" cy="5" r="2"/>
+            <circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/>
+            <circle cx="12" cy="12" r="2"/>
+            <line x1="7" y1="5" x2="17" y2="5" stroke-opacity="0.5"/>
+            <line x1="5" y1="7" x2="5" y2="17" stroke-opacity="0.5"/>
+            <line x1="7" y1="19" x2="17" y2="19" stroke-opacity="0.5"/>
+            <line x1="19" y1="7" x2="19" y2="17" stroke-opacity="0.5"/>
+            <line x1="7" y1="7" x2="10" y2="10"/>
+            <line x1="17" y1="7" x2="14" y2="10"/>
+            <line x1="7" y1="17" x2="10" y2="14"/>
+            <line x1="17" y1="17" x2="14" y2="14"/>
+          </svg>
+        </div>
+        <div class="area-nombre">Sistemas complejos</div>
+        <div class="area-desc">Emergencia, redes, no linealidad y comportamiento colectivo. Punto de convergencia natural entre disciplinas.</div>
+        <div class="area-temas">
+          <span class="area-tema">Redes</span>
+          <span class="area-tema">No linealidad</span>
+          <span class="area-tema">Caos</span>
+          <span class="area-tema">Emergencia</span>
+        </div>
+      </div>
+
+      <!-- Econofísica -->
+      <div class="area-card rv" style="transition-delay:0.20s">
+        <div class="area-icono" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(201,168,76,0.9)" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+            <polyline points="2,18 8,12 13,16 22,6"/>
+            <line x1="2" y1="22" x2="22" y2="22"/>
+          </svg>
+        </div>
+        <div class="area-nombre">Econofísica</div>
+        <div class="area-desc">Aplicación de métodos físicos y matemáticos al análisis de sistemas económicos y financieros. Área activa desde 2023.</div>
+        <div class="area-temas">
+          <span class="area-tema">Econometría</span>
+          <span class="area-tema">Finanzas cuantitativas</span>
+          <span class="area-tema">Análisis multivariado</span>
+        </div>
+      </div>
+
+      <!-- Nanosistemas y materiales -->
+      <div class="area-card rv" style="transition-delay:0.24s">
+        <div class="area-icono" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(201,168,76,0.9)" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="3"/>
+            <circle cx="4" cy="12" r="2" stroke-opacity="0.5"/>
+            <circle cx="20" cy="12" r="2" stroke-opacity="0.5"/>
+            <circle cx="12" cy="4" r="2" stroke-opacity="0.5"/>
+            <circle cx="12" cy="20" r="2" stroke-opacity="0.5"/>
+            <line x1="6" y1="12" x2="9" y2="12"/>
+            <line x1="15" y1="12" x2="18" y2="12"/>
+            <line x1="12" y1="6" x2="12" y2="9"/>
+            <line x1="12" y1="15" x2="12" y2="18"/>
+          </svg>
+        </div>
+        <div class="area-nombre">Nanosistemas y materiales</div>
+        <div class="area-desc">Ciencia de materiales a escala nanométrica, dispositivos moleculares y sistemas cuasi-2D. Temas centrales en actividades recientes.</div>
+        <div class="area-temas">
+          <span class="area-tema">Nanociencia</span>
+          <span class="area-tema">Dispositivos moleculares</span>
+          <span class="area-tema">Quasi-2D</span>
+          <span class="area-tema">Estado sólido</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PRÓXIMAS ACTIVIDADES
+     ============================================================ -->
+<section class="sec sec-gris" id="actividades" aria-labelledby="titulo-actividades">
+  <div class="sec-inner">
+    <div class="actividades-cabeza rv">
+      <div>
+        <span class="sec-etiqueta">Próximas actividades</span>
+        <h2 class="sec-titulo" id="titulo-actividades" style="margin-bottom:0">Agenda <em>académica 2026</em></h2>
+      </div>
+      <a href="http://www.cicc.unam.mx/activities/2026/index.html" class="btn-archivo" target="_blank" rel="noopener" aria-label="Ver año académico 2026 completo">
+        Ver año 2026
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+    <!-- Estado vacío elegante: no hay eventos futuros confirmados al 31 de julio de 2026 -->
+    <div class="estado-vacio rv" role="status" aria-live="polite">
+      <div class="estado-vacio-icono" aria-hidden="true">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+          <rect x="8" y="16" width="48" height="40" rx="4" stroke="#0f2044" stroke-width="2"/>
+          <line x1="8" y1="26" x2="56" y2="26" stroke="#0f2044" stroke-width="2"/>
+          <line x1="22" y1="8" x2="22" y2="20" stroke="#0f2044" stroke-width="2" stroke-linecap="round"/>
+          <line x1="42" y1="8" x2="42" y2="20" stroke="#0f2044" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="32" cy="42" r="6" stroke="#0f2044" stroke-width="1.5"/>
+          <line x1="32" y1="38" x2="32" y2="42" stroke="#0f2044" stroke-width="1.5"/>
+          <line x1="32" y1="42" x2="35" y2="44" stroke="#0f2044" stroke-width="1.5"/>
+        </svg>
+      </div>
+      <h3>Las próximas actividades se anunciarán próximamente</h3>
+      <p>Las actividades del año académico 2026 ya han concluido o se encuentran pendientes de confirmación. Consulta el archivo histórico para explorar la trayectoria académica del Centro.</p>
+      <a href="http://www.cicc.unam.mx/activities/" class="btn-archivo" target="_blank" rel="noopener" aria-label="Consultar el archivo completo de actividades del CIC">
+        Consultar archivo completo
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ARCHIVO ACADÉMICO
+     ============================================================ -->
+<section class="sec sec-oscura" id="archivo" aria-labelledby="titulo-archivo">
+  <div class="sec-inner">
+    <div class="rv">
+      <span class="sec-etiqueta">Archivo histórico</span>
+      <h2 class="sec-titulo" id="titulo-archivo">Actividades disponibles<br><em>desde 1998</em></h2>
+      <p class="sec-subtitulo">Una selección representativa de la trayectoria del Centro. El archivo completo está disponible desde el año académico 1998–1999.</p>
+    </div>
+
+    <!-- Selector de año -->
+    <div class="archivo-selector rv" role="tablist" aria-label="Seleccionar año académico">
+      <button class="archivo-anio-btn seleccionado" data-panel="panel-2024" role="tab" aria-selected="true" aria-controls="panel-2024">2024</button>
+      <button class="archivo-anio-btn" data-panel="panel-2023" role="tab" aria-selected="false" aria-controls="panel-2023">2023</button>
+      <button class="archivo-anio-btn" data-panel="panel-2022" role="tab" aria-selected="false" aria-controls="panel-2022">Anteriores</button>
+    </div>
+
+    <!-- Panel 2024 -->
+    <div class="archivo-panel activo" id="panel-2024" role="tabpanel">
+      <div class="archivo-grid">
+        <div class="archivo-tarjeta rv">
+          <span class="archivo-tipo tipo-escuela">Escuela</span>
+          <div class="archivo-fecha">15–19 julio 2024</div>
+          <div class="archivo-titulo">Econofísica y Econometría en Finanzas</div>
+          <a href="http://www.cicc.unam.mx/activities/2024/econo/index.html" class="archivo-enlace" target="_blank" rel="noopener" aria-label="Ver detalles de Econofísica y Econometría en Finanzas 2024">
+            Ver detalles
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="archivo-tarjeta rv" style="transition-delay:0.06s">
+          <span class="archivo-tipo tipo-conferencia">Mini-Conferencia</span>
+          <div class="archivo-fecha">19–20 julio 2024</div>
+          <div class="archivo-titulo">Finanzas y Econofísica</div>
+          <a href="http://www.cicc.unam.mx/activities/2024/econo/index.html" class="archivo-enlace" target="_blank" rel="noopener" aria-label="Ver detalles de Finanzas y Econofísica 2024">
+            Ver detalles
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="archivo-tarjeta rv" style="transition-delay:0.12s">
+          <span class="archivo-tipo tipo-conferencia">Conferencia</span>
+          <div class="archivo-fecha">22–26 julio 2024</div>
+          <div class="archivo-titulo">Random Matrix Theory y sus aplicaciones (RMT)</div>
+          <a href="http://www.cicc.unam.mx/activities/2024/rmt/index.html" class="archivo-enlace" target="_blank" rel="noopener" aria-label="Ver detalles de la conferencia RMT 2024">
+            Ver detalles
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="archivo-tarjeta rv" style="transition-delay:0.18s">
+          <span class="archivo-tipo tipo-reunion">Reunion científica</span>
+          <div class="archivo-fecha">26 ago – 5 sep 2024</div>
+          <div class="archivo-titulo">From Quasi-2D Systems to Molecular Devices</div>
+          <a href="http://www.cicc.unam.mx/activities/2024/mol-mat/index3.html" class="archivo-enlace" target="_blank" rel="noopener" aria-label="Ver detalles del gathering sobre sistemas cuasi-2D 2024">
+            Ver detalles
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Panel 2023 -->
+    <div class="archivo-panel" id="panel-2023" role="tabpanel">
+      <div class="archivo-grid">
+        <div class="archivo-tarjeta rv">
+          <span class="archivo-tipo tipo-conferencia">Análisis multivariado</span>
+          <div class="archivo-fecha">23–28 abril 2023</div>
+          <div class="archivo-titulo">Multivariate Analysis in Finance, Brain Research and more</div>
+          <a href="http://www.cicc.unam.mx/activities/2023/Econo/index.html" class="archivo-enlace" target="_blank" rel="noopener" aria-label="Ver detalles del evento de análisis multivariado 2023">
+            Ver detalles
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="archivo-tarjeta rv" style="transition-delay:0.06s">
+          <span class="archivo-tipo tipo-taller">Taller</span>
+          <div class="archivo-fecha">16–17 junio 2023</div>
+          <div class="archivo-titulo">Taller Germi Beta Fest 2023</div>
+          <a href="http://www.cicc.unam.mx/activities/2023/Germi/taller_germi.html" class="archivo-enlace" target="_blank" rel="noopener" aria-label="Ver detalles del Taller Germi Beta Fest 2023">
+            Ver detalles
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="archivo-tarjeta rv" style="transition-delay:0.12s">
+          <span class="archivo-tipo tipo-reunion">Gathering</span>
+          <div class="archivo-fecha">25 jun – 1 jul 2023</div>
+          <div class="archivo-titulo">Gathering de Ondas y Materiales (GOMA)</div>
+          <a href="http://www.cicc.unam.mx/activities/2023/GOMA/Cgoma2023.html" class="archivo-enlace" target="_blank" rel="noopener" aria-label="Ver detalles del Gathering de Ondas y Materiales 2023">
+            Ver detalles
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="archivo-tarjeta rv" style="transition-delay:0.18s">
+          <span class="archivo-tipo tipo-escuela">Escuela de Verano</span>
+          <div class="archivo-fecha">3–14 julio 2023</div>
+          <div class="archivo-titulo">Inteligencia Artificial y Análisis de Datos</div>
+          <a href="http://www.cicc.unam.mx/activities/2023/EscVerano/index.html" class="archivo-enlace" target="_blank" rel="noopener" aria-label="Ver detalles de la Escuela de Verano en IA 2023">
+            Ver detalles
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="archivo-tarjeta rv" style="transition-delay:0.24s">
+          <span class="archivo-tipo tipo-reunion">Gathering</span>
+          <div class="archivo-fecha">6–10 noviembre 2023</div>
+          <div class="archivo-titulo">Gathering on Transport at the Nanoscale</div>
+          <a href="http://www.cicc.unam.mx/activities/2023/TN/index.html" class="archivo-enlace" target="_blank" rel="noopener" aria-label="Ver detalles del Gathering sobre transporte a nanoescala 2023">
+            Ver detalles
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="archivo-tarjeta rv" style="transition-delay:0.30s">
+          <span class="archivo-tipo tipo-reunion">Gathering</span>
+          <div class="archivo-fecha">21–25 noviembre 2023</div>
+          <div class="archivo-titulo">Econometría, Econofísica y Transporte: Comunalidades y Diferencias</div>
+          <a href="http://www.cicc.unam.mx/activities/2023/EconophysicsEconometrics/index.html" class="archivo-enlace" target="_blank" rel="noopener" aria-label="Ver detalles del Gathering sobre Econometría y Econofísica 2023">
+            Ver detalles
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Panel años anteriores -->
+    <div class="archivo-panel" id="panel-2022" role="tabpanel">
+      <div class="archivo-nota" style="margin-bottom:24px">
+        <p>El archivo histórico del CIC abarca desde el año académico 1998–1999. Cada año contiene conferencias, talleres, escuelas, reuniones científicas y gatherings internacionales.</p>
+        <a href="http://www.cicc.unam.mx/activities/" class="btn-archivo" target="_blank" rel="noopener" aria-label="Explorar el archivo completo del CIC">
+          Explorar archivo completo (1998–2026)
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <!-- Línea temporal representativa -->
+      <div class="archivo-linea-temporal" aria-label="Línea temporal del archivo académico" role="list">
+        <div class="archivo-linea-punt" role="listitem">
+          <div class="archivo-linea-circulo" aria-label="1998-1999: Symmetries in Nature"></div>
+          <span style="font-size:10px;color:rgba(255,255,255,0.35);white-space:nowrap">1998–1999</span>
+          <div class="archivo-linea-conector"></div>
+        </div>
+        <div class="archivo-linea-punt" role="listitem">
+          <div class="archivo-linea-circulo" aria-label="2002"></div>
+          <span style="font-size:10px;color:rgba(255,255,255,0.35);white-space:nowrap">2002</span>
+          <div class="archivo-linea-conector"></div>
+        </div>
+        <div class="archivo-linea-punt" role="listitem">
+          <div class="archivo-linea-circulo" aria-label="2006"></div>
+          <span style="font-size:10px;color:rgba(255,255,255,0.35);white-space:nowrap">2006</span>
+          <div class="archivo-linea-conector"></div>
+        </div>
+        <div class="archivo-linea-punt" role="listitem">
+          <div class="archivo-linea-circulo" aria-label="2010"></div>
+          <span style="font-size:10px;color:rgba(255,255,255,0.35);white-space:nowrap">2010</span>
+          <div class="archivo-linea-conector"></div>
+        </div>
+        <div class="archivo-linea-punt" role="listitem">
+          <div class="archivo-linea-circulo" aria-label="2015"></div>
+          <span style="font-size:10px;color:rgba(255,255,255,0.35);white-space:nowrap">2015</span>
+          <div class="archivo-linea-conector"></div>
+        </div>
+        <div class="archivo-linea-punt" role="listitem">
+          <div class="archivo-linea-circulo" aria-label="2020"></div>
+          <span style="font-size:10px;color:rgba(255,255,255,0.35);white-space:nowrap">2020</span>
+          <div class="archivo-linea-conector"></div>
+        </div>
+        <div class="archivo-linea-punt" role="listitem">
+          <div class="archivo-linea-circulo activo" aria-label="2024, año seleccionado"></div>
+          <span style="font-size:10px;color:rgba(201,168,76,0.8);white-space:nowrap">2024</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="archivo-nota rv" style="margin-top:32px">
+      <p>Archivo disponible desde el año académico 1998–1999</p>
+      <a href="http://www.cicc.unam.mx/activities/" class="btn-archivo" target="_blank" rel="noopener" aria-label="Ver el índice completo de actividades del CIC">
+        Índice completo de actividades
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CÓMO SE VIVE UNA ACTIVIDAD EN EL CIC
+     ============================================================ -->
+<section class="sec" id="experiencia" aria-labelledby="titulo-experiencia">
+  <div class="sec-inner">
+    <div class="rv">
+      <span class="sec-etiqueta">La experiencia</span>
+      <h2 class="sec-titulo" id="titulo-experiencia">Cómo se vive una actividad<br><em>en el CIC</em></h2>
+      <p class="sec-subtitulo">Cada reunión científica del Centro comparte una estructura que favorece el intercambio profundo. La mayoría tienen una duración de tres semanas, aunque pueden extenderse desde unos días hasta seis meses.</p>
+    </div>
+
+    <div class="pasos-grid rv">
+      <div class="paso">
+        <div class="paso-num" aria-hidden="true">01</div>
+        <div class="paso-icono" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(201,168,76,0.9)" stroke-width="1.8" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="8" r="4"/>
+            <circle cx="5" cy="18" r="3"/>
+            <circle cx="19" cy="18" r="3"/>
+            <line x1="9" y1="10" x2="7" y2="15"/>
+            <line x1="15" y1="10" x2="17" y2="15"/>
+          </svg>
+        </div>
+        <h3>Encuentro entre especialistas</h3>
+        <p>Científicos de distintos países e instituciones se reúnen durante días o semanas en Cuernavaca. El formato intensivo permite una convivencia académica excepcional.</p>
+      </div>
+
+      <div class="paso">
+        <div class="paso-num" aria-hidden="true">02</div>
+        <div class="paso-icono" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(201,168,76,0.9)" stroke-width="1.8" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 20V8l10-6 10 6v12"/>
+            <path d="M9 20v-8h6v8"/>
+          </svg>
+        </div>
+        <h3>Intercambio interdisciplinario</h3>
+        <p>La cercanía entre físicos, matemáticos y biólogos —y la arquitectura informal del Centro— facilita conversaciones que no ocurrirían en congresos tradicionales.</p>
+      </div>
+
+      <div class="paso">
+        <div class="paso-num" aria-hidden="true">03</div>
+        <div class="paso-icono" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(201,168,76,0.9)" stroke-width="1.8" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="4"/>
+            <line x1="12" y1="2" x2="12" y2="8"/>
+            <line x1="12" y1="16" x2="12" y2="22"/>
+            <line x1="2" y1="12" x2="8" y2="12"/>
+            <line x1="16" y1="12" x2="22" y2="12"/>
+          </svg>
+        </div>
+        <h3>Desarrollo de nuevas preguntas</h3>
+        <p>Las sesiones de trabajo, los seminarios y el tiempo libre compartido generan preguntas que trascienden las fronteras disciplinares y abren líneas de investigación.</p>
+      </div>
+
+      <div class="paso">
+        <div class="paso-num" aria-hidden="true">04</div>
+        <div class="paso-icono" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(201,168,76,0.9)" stroke-width="1.8" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 4h16v16H4z" rx="2"/>
+            <line x1="8" y1="12" x2="16" y2="12"/>
+            <line x1="12" y1="8" x2="12" y2="16"/>
+          </svg>
+        </div>
+        <h3>Formación de colaboraciones</h3>
+        <p>Las reuniones del CIC han dado origen a colaboraciones y publicaciones de largo plazo entre investigadores de México y el mundo que de otro modo no habrían coincidido.</p>
+      </div>
+    </div>
+
+    <!-- Nota sobre talleres de Nanosistemas 2025-2026 como ejemplo reciente -->
+    <div class="rv" style="margin-top:40px;padding:28px 28px;background:var(--gris-fondo);border:1px solid var(--borde);border-radius:var(--radio-lg)">
+      <p style="font-size:14px;color:var(--texto-medio);line-height:1.75">
+        <strong style="color:var(--azul-profundo);font-weight:600">Ejemplo reciente:</strong>
+        Los Talleres de Nanosistemas I, II y III (2025–2026) reunieron a especialistas en física del estado sólido, nanociencia y dispositivos moleculares. Organizados en tres etapas consecutivas, ejemplifican el formato característico del CIC: intensidad académica concentrada en el tiempo.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     COMUNIDAD CIENTÍFICA
+     ============================================================ -->
+<section class="sec sec-oscura" id="comunidad" aria-labelledby="titulo-comunidad">
+  <div class="sec-inner">
+    <div class="rv">
+      <span class="sec-etiqueta">Comunidad científica</span>
+      <h2 class="sec-titulo" id="titulo-comunidad">Las personas e instituciones<br><em>que hacen posible el CIC</em></h2>
+    </div>
+
+    <div class="comunidad-bloque">
+
+      <!-- Dirección -->
+      <div class="comunidad-subtitulo rv">Dirección y secretariado</div>
+      <div class="directivos-grid rv">
+        <div class="directivo-card">
+          <div class="directivo-foto" aria-label="[AGREGAR FOTOGRAFÍA DEL DR. THOMAS H. SELIGMAN]">
+            <!-- [AGREGAR FOTOGRAFÍA OFICIAL] -->
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+            </svg>
+          </div>
+          <div class="directivo-cargo">Presidente</div>
+          <div class="directivo-nombre">Dr. Thomas H. Seligman</div>
+          <div class="directivo-inst">ICF UNAM, Cuernavaca, México</div>
+          <a href="mailto:seligman@icf.unam.mx" class="directivo-email" aria-label="Enviar correo al Dr. Thomas Seligman">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            seligman@icf.unam.mx
+          </a>
+        </div>
+
+        <div class="directivo-card">
+          <div class="directivo-foto" aria-label="[AGREGAR FOTOGRAFÍA DEL DR. FRANCOIS LEYVRAZ]">
+            <!-- [AGREGAR FOTOGRAFÍA OFICIAL] -->
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+            </svg>
+          </div>
+          <div class="directivo-cargo">Director</div>
+          <div class="directivo-nombre">Dr. François Leyvraz Waltz</div>
+          <div class="directivo-inst">ICF UNAM, Cuernavaca, México</div>
+          <a href="mailto:leyvraz@fis.unam.mx" class="directivo-email" aria-label="Enviar correo al Dr. François Leyvraz">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            leyvraz@fis.unam.mx
+          </a>
+        </div>
+
+        <div class="directivo-card">
+          <div class="directivo-foto" aria-label="[AGREGAR FOTOGRAFÍA DEL DR. GUSTAVO MARTÍNEZ MEKLER]">
+            <!-- [AGREGAR FOTOGRAFÍA OFICIAL] -->
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+            </svg>
+          </div>
+          <div class="directivo-cargo">Vicepresidente</div>
+          <div class="directivo-nombre">Dr. Gustavo Martínez Mekler</div>
+          <div class="directivo-inst">ICF UNAM, México</div>
+        </div>
+
+        <div class="directivo-card">
+          <div class="directivo-foto" aria-label="[AGREGAR FOTOGRAFÍA DE C.P. CINZIA OCAMPO]">
+            <!-- [AGREGAR FOTOGRAFÍA OFICIAL] -->
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+            </svg>
+          </div>
+          <div class="directivo-cargo">Secretaría</div>
+          <div class="directivo-nombre">C.P. Cinzia Ocampo</div>
+          <div class="directivo-inst">Centro Internacional de Ciencias A.C.</div>
+          <a href="mailto:cinzi@cicc.unam.mx" class="directivo-email" aria-label="Enviar correo a Cinzia Ocampo en la secretaría del CIC">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            cinzi@cicc.unam.mx
+          </a>
+        </div>
+      </div>
+
+      <!-- Miembros asociados nacionales -->
+      <div class="comunidad-subtitulo rv" style="margin-top:16px">Miembros asociados — México <span style="font-size:9px;font-weight:400;letter-spacing:0;text-transform:none;color:rgba(255,255,255,0.25)">(selección)</span></div>
+      <div class="miembros-cols rv">
+        <ul style="list-style:none">
+          <li class="miembro-item">
+            <div class="miembro-punto"></div>
+            <div><div class="miembro-nombre">Dr. Rubén G. Barrera</div><div class="miembro-inst">Instituto de Física, UNAM</div></div>
+          </li>
+          <li class="miembro-item">
+            <div class="miembro-punto"></div>
+            <div><div class="miembro-nombre">Dr. Luis Benet Fernández</div><div class="miembro-inst">Instituto de Ciencias Físicas, UNAM</div></div>
+          </li>
+          <li class="miembro-item">
+            <div class="miembro-punto"></div>
+            <div><div class="miembro-nombre">Dr. Alberto Darszon</div><div class="miembro-inst">Instituto de Biotecnología, UNAM</div></div>
+          </li>
+          <li class="miembro-item">
+            <div class="miembro-punto"></div>
+            <div><div class="miembro-nombre">Dr. Alejandro Frank</div><div class="miembro-inst">Departamento de Matemáticas, Cinvestav</div></div>
+          </li>
+          <li class="miembro-item">
+            <div class="miembro-punto"></div>
+            <div><div class="miembro-nombre">Dr. Antonio Lazcano Araujo</div><div class="miembro-inst">Facultad de Ciencias, UNAM</div></div>
+          </li>
+          <li class="miembro-item">
+            <div class="miembro-punto"></div>
+            <div><div class="miembro-nombre">Dr. Luis Mochán Backal</div><div class="miembro-inst">Instituto de Ciencias Físicas, UNAM</div></div>
+          </li>
+          <li class="miembro-item">
+            <div class="miembro-punto"></div>
+            <div><div class="miembro-nombre">Dr. Kurt Bernardo Wolf</div><div class="miembro-inst">Instituto de Ciencias Físicas, UNAM</div></div>
+          </li>
+          <li class="miembro-item">
+            <div class="miembro-punto"></div>
+            <div><div class="miembro-nombre">Dr. José Seade Kuri</div><div class="miembro-inst">IM Unidad de Cuernavaca, UNAM</div></div>
+          </li>
+        </ul>
+        <ul style="list-style:none">
+          <li class="miembro-item">
+            <div class="miembro-punto"></div>
+            <div><div class="miembro-nombre">Dr. Raymundo Bautista R.</div><div class="miembro-inst">Instituto de Matemáticas, UNAM</div></div>
+          </li>
+          <li class="miembro-item">
+            <div class="miembro-punto"></div>
+            <div><div class="miembro-nombre">Dr. Thomas Gorin</div><div class="miembro-inst">Universidad de Guadalajara</div></div>
+          </li>
+          <li class="miembro-item">
+            <div class="miembro-punto"></div>
+            <div><div class="miembro-nombre">Dr. Markus Müller Bender</div><div class="miembro-inst">Facultad de Ciencias, UAEM</div></div>
+          </li>
+          <li class="miembro-item">
+            <div class="miembro-punto"></div>
+            <div><div class="miembro-nombre">Dr. Lourival Possani</div><div class="miembro-inst">Instituto de Biotecnología, UNAM</div></div>
+          </li>
+          <li class="miembro-item">
+            <div class="miembro-punto"></div>
+            <div><div class="miembro-nombre">Dr. Arcadio Poveda Ricalde</div><div class="miembro-inst">Instituto de Astronomía, UNAM</div></div>
+          </li>
+          <li class="miembro-item">
+            <div class="miembro-punto"></div>
+            <div><div class="miembro-nombre">Dr. Alejandro R. Hernández Montoya</div><div class="miembro-inst">Universidad de Veracruz</div></div>
+          </li>
+          <li class="miembro-item">
+            <div class="miembro-punto"></div>
+            <div><div class="miembro-nombre">Dr. Antonio Méndez Bermudez</div><div class="miembro-inst">Benemérita Universidad de Puebla</div></div>
+          </li>
+          <li class="miembro-item">
+            <div class="miembro-punto"></div>
+            <div><div class="miembro-nombre">Dr. Daniel Malacara</div><div class="miembro-inst">Centro de Investigaciones en Óptica</div></div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Miembros internacionales -->
+      <div class="comunidad-subtitulo rv">Miembros asociados — Internacional</div>
+      <div class="miembros-cols rv">
+        <ul style="list-style:none">
+          <li class="miembro-item">
+            <div class="miembro-punto" style="background:var(--azul-acento)"></div>
+            <div><div class="miembro-nombre">Dr. Anirban Chakraborti</div><div class="miembro-inst">Jawaharlal Nehru University, India</div></div>
+          </li>
+          <li class="miembro-item">
+            <div class="miembro-punto" style="background:var(--azul-acento)"></div>
+            <div><div class="miembro-nombre">Dr. Thomas Guhr</div><div class="miembro-inst">University of Duisburg-Essen, Alemania</div></div>
+          </li>
+          <li class="miembro-item">
+            <div class="miembro-punto" style="background:var(--azul-acento)"></div>
+            <div><div class="miembro-nombre">Dr. Itamar Procaccia</div><div class="miembro-inst">Weizmann Institute, Israel</div></div>
+          </li>
+        </ul>
+        <ul style="list-style:none">
+          <li class="miembro-item">
+            <div class="miembro-punto" style="background:var(--azul-acento)"></div>
+            <div><div class="miembro-nombre">Dr. Tomaz Prosen</div><div class="miembro-inst">University of Ljubljana, Eslovenia</div></div>
+          </li>
+          <li class="miembro-item">
+            <div class="miembro-punto" style="background:var(--azul-acento)"></div>
+            <div><div class="miembro-nombre">Dr. Hans A. Weidenmüller</div><div class="miembro-inst">Max-Planck-Institut für Kernphysik, Heidelberg</div></div>
+          </li>
+          <li class="miembro-item">
+            <div class="miembro-punto" style="background:var(--azul-acento)"></div>
+            <div><div class="miembro-nombre">Dr. Vladimir Y. Man'ko</div><div class="miembro-inst">Lebedev Institute, Academia de Ciencias de Rusia</div></div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Instituciones miembro -->
+      <div class="comunidad-subtitulo rv">Instituciones miembro</div>
+      <div class="instituciones-grid rv">
+        <div class="inst-card">
+          <!-- [AGREGAR LOGOTIPO OFICIAL: Academia Mexicana de Ciencias] -->
+          <div class="inst-logo-placeholder" aria-hidden="true">AMC</div>
+          <div class="inst-nombre">Academia Mexicana de Ciencias</div>
+        </div>
+        <div class="inst-card">
+          <!-- [AGREGAR LOGOTIPO OFICIAL: UAEM] -->
+          <div class="inst-logo-placeholder" aria-hidden="true">UAEM</div>
+          <div class="inst-nombre">Universidad Autónoma del Estado de Morelos</div>
+        </div>
+        <div class="inst-card">
+          <!-- [AGREGAR LOGOTIPO OFICIAL: UNAM] -->
+          <div class="inst-logo-placeholder" aria-hidden="true">UNAM</div>
+          <div class="inst-nombre">Universidad Nacional Autónoma de México</div>
+        </div>
+        <div class="inst-card">
+          <!-- [AGREGAR LOGOTIPO OFICIAL: CIC UNAM] -->
+          <div class="inst-logo-placeholder" aria-hidden="true">CIC</div>
+          <div class="inst-nombre">Coordinación de la Investigación Científica, UNAM</div>
+        </div>
+      </div>
+
+      <div style="margin-top:24px;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:var(--radio)" class="rv">
+        <p style="font-size:12.5px;color:rgba(255,255,255,0.38);line-height:1.6">
+          Lista completa de miembros asociados disponible en:
+          <a href="http://www.cicc.unam.mx/associate.html" style="color:var(--azul-acento);text-decoration:none" target="_blank" rel="noopener" aria-label="Ver la lista completa de miembros asociados del CIC">cicc.unam.mx/associate.html</a>.
+          Los logotipos institucionales deben ser proporcionados por el CIC en formato SVG o PNG con fondo transparente.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     UBICACIÓN Y CONTACTO
+     ============================================================ -->
+<section class="sec" id="contacto" aria-labelledby="titulo-contacto">
+  <div class="sec-inner">
+    <div class="rv">
+      <span class="sec-etiqueta">Ubicación y contacto</span>
+      <h2 class="sec-titulo" id="titulo-contacto">Cómo llegar y<br><em>comunicarse con el CIC</em></h2>
+    </div>
+
+    <div class="ubicacion-grid">
+      <div class="ubicacion-info rv">
+        <div class="ubicacion-item">
+          <div class="ubicacion-icono" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--azul-medio)" stroke-width="2" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <div>
+            <div class="ubicacion-label">Dirección</div>
+            <div class="ubicacion-valor">
+              Avenida Universidad 1001<br>
+              Campus UAEM-UNAM<br>
+              C.P. 62131 Cuernavaca, Morelos<br>
+              México<br>
+              <em style="font-size:12.5px;color:var(--texto-suave)">(Junto al Instituto de Biotecnología)</em>
+            </div>
+          </div>
+        </div>
+
+        <div class="ubicacion-item">
+          <div class="ubicacion-icono" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--azul-medio)" stroke-width="2" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13 19.79 19.79 0 0 1 1.6 4.44 2 2 0 0 1 3.56 2.25h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.06 6.06l.81-.81a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="ubicacion-label">Teléfono</div>
+            <div class="ubicacion-valor">
+              <a href="tel:+527773291877">+52 (777) 329-1877</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="ubicacion-item">
+          <div class="ubicacion-icono" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--azul-medio)" stroke-width="2" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+          <div>
+            <div class="ubicacion-label">Correo general</div>
+            <div class="ubicacion-valor">
+              <a href="mailto:cinzi@cicc.unam.mx">cinzi@cicc.unam.mx</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="ubicacion-item">
+          <div class="ubicacion-icono" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--azul-medio)" stroke-width="2" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <line x1="8" y1="2" x2="8" y2="6"/><line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="2" y1="10" x2="22" y2="10"/>
+            </svg>
+          </div>
+          <div>
+            <div class="ubicacion-label">Reuniones científicas</div>
+            <div class="ubicacion-valor">
+              Las solicitudes de reuniones deben enviarse al director:<br>
+              <a href="mailto:leyvraz@cicc.unam.mx">leyvraz@cicc.unam.mx</a>
+            </div>
+          </div>
+        </div>
+
+        <a href="https://maps.google.com/?q=Avenida+Universidad+1001,+Campus+UAEM-UNAM,+Cuernavaca,+Morelos,+Mexico" class="btn-mapa" target="_blank" rel="noopener" aria-label="Abrir ubicación del CIC en Google Maps">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+          Abrir en Google Maps
+        </a>
+      </div>
+
+      <div class="rv" style="transition-delay:0.1s">
+        <!-- Mapa embebido sin clave de API: iframe de OpenStreetMap -->
+        <div style="border-radius:var(--radio-lg);overflow:hidden;border:1px solid var(--borde)">
+          <iframe
+            title="Mapa del Campus UAEM-UNAM en Cuernavaca, ubicación del Centro Internacional de Ciencias"
+            width="100%"
+            height="380"
+            loading="lazy"
+            style="border:none;display:block"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-99.2414%2C18.9800%2C-99.2200%2C18.9900&layer=mapnik&marker=18.9850%2C-99.2307"
+            aria-label="Mapa de OpenStreetMap mostrando la ubicación del CIC en Cuernavaca">
+          </iframe>
+        </div>
+        <p style="font-size:11.5px;color:var(--texto-suave);margin-top:10px;text-align:center">
+          Campus UAEM-UNAM · Av. Universidad 1001 · Cuernavaca, Morelos ·
+          <a href="https://www.openstreetmap.org/?mlat=18.9850&mlon=-99.2307#map=15/18.9850/-99.2307" style="color:var(--azul-medio);text-decoration:none" target="_blank" rel="noopener" aria-label="Ver mapa más grande en OpenStreetMap">Ver mapa más grande</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Información de llegada -->
+    <div class="rv" style="margin-top:48px;background:var(--gris-fondo);border:1px solid var(--borde);border-radius:var(--radio-lg);padding:28px 28px">
+      <h3 style="font-family:var(--fuente-titulo);font-size:19px;font-weight:600;color:var(--azul-profundo);margin-bottom:16px">Cómo llegar desde la Ciudad de México</h3>
+      <p style="font-size:14px;color:var(--texto-medio);line-height:1.8;max-width:640px">
+        Desde el Aeropuerto Internacional de la Ciudad de México (Terminal 1 ó 2), tome los autobuses de la empresa <strong>Pullman de Morelos</strong> con dirección a Cuernavaca (servicio de 6:30 a 00:30 aprox., cada 30 minutos). El viaje dura aproximadamente 90 minutos. Llegará a la estación "Casino de la Selva" en Cuernavaca; desde ahí tome un taxi hacia el Campus UAEM-UNAM.
+        <a href="http://www.cicc.unam.mx/information.html" style="color:var(--azul-medio);text-decoration:none;display:inline-flex;align-items:center;gap:4px;margin-left:6px" target="_blank" rel="noopener" aria-label="Ver instrucciones detalladas de llegada en el sitio del CIC">
+          Instrucciones completas
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CTA FINAL
+     ============================================================ -->
+<div class="cta-final" aria-labelledby="titulo-cta-final">
+  <div class="cta-final-inner">
+    <p class="rv" style="font-size:11px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--dorado);margin-bottom:16px">Un espacio de encuentro</p>
+    <h2 class="rv" id="titulo-cta-final">
+      Las grandes preguntas<br>
+      <em>necesitan más de una disciplina.</em>
+    </h2>
+    <p class="rv">
+      El Centro Internacional de Ciencias está abierto a investigadores, estudiantes de posgrado, profesores e instituciones que deseen organizar o participar en actividades académicas interdisciplinarias. Toda solicitud de reunión científica debe dirigirse al Director.
+    </p>
+    <div class="cta-botones rv">
+      <a href="http://www.cicc.unam.mx/activities/" class="btn-primario" target="_blank" rel="noopener" aria-label="Consultar el catálogo de próximas actividades del CIC">
+        Consultar próximas actividades
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="mailto:leyvraz@cicc.unam.mx" class="btn-secundario" aria-label="Enviar correo para contactar al CIC">
+        Contactar al CIC
+      </a>
+    </div>
+  </div>
+</div>
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer role="contentinfo">
+  <div class="footer-top">
+    <div class="footer-marca">
+      <div class="footer-logo-txt">Centro Internacional de Ciencias A.C.</div>
+      <p class="footer-descripcion">
+        Un espacio internacional para el diálogo y la colaboración científica entre físicos, matemáticos y biólogos. Fundado en 1986. Campus UAEM-UNAM, Cuernavaca, Morelos, México.
+      </p>
+      <div class="footer-contacto-mini">
+        <a href="tel:+527773291877" aria-label="Teléfono del CIC">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13 19.79 19.79 0 0 1 1.6 4.44 2 2 0 0 1 3.56 2.25h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.06 6.06l.81-.81a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +52 (777) 329-1877
+        </a>
+        <a href="mailto:cinzi@cicc.unam.mx" aria-label="Correo general del CIC">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          cinzi@cicc.unam.mx
+        </a>
+        <a href="http://www.cicc.unam.mx" aria-label="Sitio web del CIC" target="_blank" rel="noopener">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          cicc.unam.mx
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navegación</h4>
+      <ul class="footer-nav" role="list">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#acerca">Acerca del CIC</a></li>
+        <li><a href="#areas">Áreas científicas</a></li>
+        <li><a href="#actividades">Actividades</a></li>
+        <li><a href="#archivo">Archivo histórico</a></li>
+        <li><a href="#comunidad">Comunidad</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Archivo</h4>
+      <ul class="footer-nav" role="list">
+        <li><a href="http://www.cicc.unam.mx/activities/2026/index.html" target="_blank" rel="noopener">Año 2026</a></li>
+        <li><a href="http://www.cicc.unam.mx/activities/2025/index.html" target="_blank" rel="noopener">Año 2025</a></li>
+        <li><a href="http://www.cicc.unam.mx/activities/2024/index.html" target="_blank" rel="noopener">Año 2024</a></li>
+        <li><a href="http://www.cicc.unam.mx/activities/2023/index.html" target="_blank" rel="noopener">Año 2023</a></li>
+        <li><a href="http://www.cicc.unam.mx/activities/" target="_blank" rel="noopener">Índice completo</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Misión</h4>
+      <ul class="footer-nav" role="list">
+        <li><a href="http://www.cicc.unam.mx/mission.html" target="_blank" rel="noopener">Misión del CIC</a></li>
+        <li><a href="http://www.cicc.unam.mx/associate.html" target="_blank" rel="noopener">Miembros asociados</a></li>
+        <li><a href="http://www.cicc.unam.mx/visitors.html" target="_blank" rel="noopener">Visitantes</a></li>
+        <li><a href="http://www.cicc.unam.mx/information.html" target="_blank" rel="noopener">Información de llegada</a></li>
+        <li><a href="http://www.cicc.unam.mx/links.html" target="_blank" rel="noopener">Enlaces institucionales</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© <span id="anio-footer"></span> Centro Internacional de Ciencias A.C. Todos los derechos reservados.</span>
+    <span>Cuernavaca, Morelos · México ·
+      <a href="http://www.cicc.unam.mx" target="_blank" rel="noopener" aria-label="Sitio oficial del CIC">cicc.unam.mx</a>
+    </span>
+  </div>
+</footer>
+
+<!-- Botón volver arriba -->
+<button id="btn-arriba" aria-label="Volver al inicio de la página" title="Volver arriba" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" aria-hidden="true">
+    <path d="M18 15l-6-6-6 6"/>
+  </svg>
+</button>
+
+<!-- ============================================================
+     JAVASCRIPT
+     ============================================================ -->
+<script>
+(function () {
+  'use strict';
+
+  /* ── Año dinámico en footer ── */
+  var elAnio = document.getElementById('anio-footer');
+  if (elAnio) elAnio.textContent = new Date().getFullYear();
+
+  /* ── Navegación: scroll scrolled ── */
+  var nav = document.getElementById('nav');
+  function actualizarNav() {
+    if (!nav) return;
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  }
+  window.addEventListener('scroll', actualizarNav, { passive: true });
+  actualizarNav();
+
+  /* ── Navegación: indicador de sección activa ── */
+  var navLinks = document.querySelectorAll('.nav-links a:not(.nav-cta)');
+  var secciones = [];
+  navLinks.forEach(function (a) {
+    var href = a.getAttribute('href');
+    if (href && href.startsWith('#')) {
+      var sec = document.getElementById(href.slice(1));
+      if (sec) secciones.push({ el: sec, link: a });
+    }
+  });
+
+  function actualizarActivo() {
+    var scrollY = window.scrollY;
+    var activo = null;
+    secciones.forEach(function (s) {
+      if (s.el.offsetTop - 120 <= scrollY) activo = s;
+    });
+    navLinks.forEach(function (a) { a.classList.remove('activo'); });
+    if (activo) activo.link.classList.add('activo');
+  }
+
+  window.addEventListener('scroll', actualizarActivo, { passive: true });
+
+  /* ── Menú hamburguesa ── */
+  var hamburger = document.getElementById('hamburger');
+  var navMobile = document.getElementById('nav-mobile');
+
+  function cerrarMenu() {
+    if (!hamburger || !navMobile) return;
+    hamburger.setAttribute('aria-expanded', 'false');
+    hamburger.setAttribute('aria-label', 'Abrir menú de navegación');
+    navMobile.classList.remove('abierto');
+  }
+
+  if (hamburger && navMobile) {
+    hamburger.addEventListener('click', function () {
+      var abierto = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', String(!abierto));
+      hamburger.setAttribute('aria-label', abierto ? 'Abrir menú de navegación' : 'Cerrar menú de navegación');
+      navMobile.classList.toggle('abierto', !abierto);
+    });
+
+    // Cerrar al hacer clic en un enlace del menú móvil
+    document.querySelectorAll('.nav-mobile-link, .nav-mobile-cta').forEach(function (a) {
+      a.addEventListener('click', cerrarMenu);
+    });
+
+    // Cerrar con Escape
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') cerrarMenu();
+    });
+  }
+
+  /* ── Reveal con IntersectionObserver ── */
+  if ('IntersectionObserver' in window) {
+    var rvObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry, i) {
+        if (entry.isIntersecting) {
+          var delay = entry.target.style.transitionDelay || '0s';
+          // Respetar el delay ya declarado en inline style
+          entry.target.classList.add('visible');
+          rvObs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.rv').forEach(function (el) {
+      rvObs.observe(el);
+    });
+  } else {
+    // Fallback: mostrar todo
+    document.querySelectorAll('.rv').forEach(function (el) {
+      el.classList.add('visible');
+    });
+  }
+
+  /* ── Selector de años en archivo ── */
+  var aniosBtns = document.querySelectorAll('.archivo-anio-btn');
+  var paneles = document.querySelectorAll('.archivo-panel');
+
+  aniosBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var targetPanel = btn.dataset.panel;
+
+      aniosBtns.forEach(function (b) {
+        b.classList.remove('seleccionado');
+        b.setAttribute('aria-selected', 'false');
+      });
+      paneles.forEach(function (p) { p.classList.remove('activo'); });
+
+      btn.classList.add('seleccionado');
+      btn.setAttribute('aria-selected', 'true');
+
+      var panel = document.getElementById(targetPanel);
+      if (panel) {
+        panel.classList.add('activo');
+        // Re-disparar reveal en elementos del panel
+        panel.querySelectorAll('.rv:not(.visible)').forEach(function (el) {
+          setTimeout(function () { el.classList.add('visible'); }, 50);
+        });
+      }
+    });
+  });
+
+  /* ── Botón volver arriba ── */
+  var btnArriba = document.getElementById('btn-arriba');
+  if (btnArriba) {
+    window.addEventListener('scroll', function () {
+      btnArriba.classList.toggle('visible', window.scrollY > 400);
+    }, { passive: true });
+  }
+
+  /* ── Scroll suave para todos los enlaces internos ── */
+  document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      var id = a.getAttribute('href').slice(1);
+      if (!id) return;
+      var target = document.getElementById(id);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // Actualizar foco para accesibilidad
+        target.setAttribute('tabindex', '-1');
+        target.focus({ preventScroll: true });
+      }
+    });
+  });
+
+})();
+</script>
+</body>
+</html>
