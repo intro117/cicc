@@ -88,9 +88,11 @@ body{font-family:var(--fb);font-weight:300;color:var(--blanco-c);background:var(
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--px)}
 .sec{padding:clamp(72px,9vw,110px) 0;position:relative}
 .etiq{display:inline-flex;align-items:center;gap:8px;font-size:10.5px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:#c9a227;margin-bottom:10px}
+.sec-act .etiq,.sec-cont .etiq{color:#8a6200}
 .etiq::before{content:'';display:block;width:20px;height:1px;background:#c9a227;flex-shrink:0}
 .h2{font-family:var(--ft);font-size:clamp(28px,3.2vw,44px);font-weight:300;line-height:1.12;letter-spacing:-.01em;color:#0d1b3e;margin-bottom:14px}
 .h2 em{font-style:italic;color:var(--amarillo)}
+.sec-act .h2 em,.sec-cont .h2 em{color:#8a6200}
 .bajada{font-size:clamp(15px,1.5vw,17px);font-weight:300;color:#4a5568;line-height:1.78;max-width:560px}
 .btn-p{display:inline-flex;align-items:center;gap:8px;background:#1e3a6e;color:#ffffff;font-size:14px;font-weight:600;padding:13px 28px;border-radius:var(--r);text-decoration:none;transition:background .22s,box-shadow .22s,transform .18s;box-shadow:0 4px 16px rgba(30,58,110,.3)}
 .btn-p:hover{background:#c9a227;color:#0d1b3e;box-shadow:0 6px 28px rgba(201,162,39,.4);transform:translateY(-2px)}
@@ -122,24 +124,24 @@ body{font-family:var(--fb);font-weight:300;color:var(--blanco-c);background:var(
 /* ════════════
    LOGO 3D SECTION
 ════════════ */
-.logo3d-sec{background:#f7f5f0;padding:clamp(60px,7vw,90px) 0;border-top:1px solid var(--borde);border-bottom:1px solid var(--borde);position:relative;overflow:hidden}
+.logo3d-sec{background:#0d1b3e;padding:clamp(60px,7vw,90px) 0;border-top:1px solid rgba(201,162,39,.15);border-bottom:1px solid rgba(201,162,39,.15);position:relative;overflow:hidden}
 .logo3d-inner{max-width:var(--maxw);margin:0 auto;padding:0 var(--px);display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
 #logo-canvas{display:block;width:100%;max-width:440px;height:380px;cursor:grab}
 #logo-canvas:active{cursor:grabbing}
 .logo3d-txt .etiq{margin-bottom:14px}
 .logo3d-txt .h2{margin-bottom:16px}
-.logo3d-txt p{font-size:15.5px;color:#374151;line-height:1.82;margin-bottom:16px}
-.logo3d-cita{border-left:3px solid #c9a227;padding:16px 18px;background:rgba(201,162,39,.08);border-radius:0 var(--r) var(--r) 0;margin:20px 0}
-.logo3d-cita p{font-family:var(--ft);font-size:17px;font-style:italic;color:#0d1b3e;margin:0;line-height:1.6}
+.logo3d-txt p{font-size:15.5px;color:rgba(255,255,255,.72);line-height:1.82;margin-bottom:16px}
+.logo3d-cita{border-left:3px solid #c9a227;padding:16px 18px;background:rgba(201,162,39,.12);border-radius:0 var(--r) var(--r) 0;margin:20px 0}
+.logo3d-cita p{font-family:var(--ft);font-size:17px;font-style:italic;color:#fff;margin:0;line-height:1.6}
 .logo3d-datos{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}
-.ldato{background:rgba(30,58,110,.06);border:1px solid rgba(30,58,110,.15);border-radius:var(--r);padding:14px 16px}
+.ldato{background:rgba(255,255,255,.06);border:1px solid rgba(201,162,39,.2);border-radius:var(--r);padding:14px 16px}
 .ldato-n{font-family:var(--ft);font-size:28px;font-weight:300;color:var(--amarillo);line-height:1;margin-bottom:3px}
-.ldato-l{font-size:11px;color:#6b7280;line-height:1.4}
+.ldato-l{font-size:11px;color:rgba(255,255,255,.45);line-height:1.4}
 
 /* ════════════
    ACTIVIDADES
 ════════════ */
-.sec-act{background:#ffffff}
+.sec-act{background:#ffffff;border-top:1px solid #e5e7eb}
 .act-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:36px;flex-wrap:wrap}
 /* fondo de partículas en la sección */
 .particles-bg{position:absolute;inset:0;pointer-events:none;overflow:hidden}
@@ -169,7 +171,7 @@ body{font-family:var(--fb);font-weight:300;color:var(--blanco-c);background:var(
 .t-esc{color:#88ffcc;background:rgba(136,255,204,.08);border:1px solid rgba(136,255,204,.18)}
 .t-gath{color:#ff88cc;background:rgba(255,136,204,.08);border:1px solid rgba(255,136,204,.18)}
 .ev-fecha{font-size:11px;color:#9ca3af;margin-bottom:7px}
-.ev-titulo{font-family:var(--ft);font-size:16.5px;font-weight:400;color:#0d1b3e;line-height:1.38}
+.ev-titulo{font-family:var(--ft);font-size:16.5px;font-weight:600;color:#0d1b3e;line-height:1.38}
 .ev-link{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;color:var(--azul-cl);text-decoration:none;margin-top:12px;transition:color .18s,gap .18s}
 .ev-link:hover{color:var(--amarillo);gap:8px}
 .arch-pie{text-align:center;margin-top:24px;padding:18px;border:1px solid #e5e7eb;border-radius:var(--r);background:#f9fafb}
@@ -178,36 +180,36 @@ body{font-family:var(--fb);font-weight:300;color:var(--blanco-c);background:var(
 /* ════════════
    COMUNIDAD
 ════════════ */
-.sec-com{background:#eef1f7}
+.sec-com{background:#0d1b3e}
 .sec-com::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 80% 50%,rgba(201,162,39,.06),transparent 60%);pointer-events:none}
 .com-grid{display:grid;grid-template-columns:1fr 1fr;gap:52px;margin-top:46px;align-items:start}
-.dir-titulo{font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#9ca3af;margin-bottom:14px}
+.dir-titulo{font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.38);margin-bottom:14px}
 .dir-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.dir-card{background:#ffffff;border:1px solid #e5e7eb;border-radius:12px;padding:20px 16px;transition:border-color .22s,transform .22s,box-shadow .22s;position:relative;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.dir-card{background:rgba(255,255,255,.05);border:1px solid rgba(201,162,39,.18);border-radius:12px;padding:20px 16px;transition:border-color .22s,transform .22s,box-shadow .22s;position:relative;overflow:hidden}
 .dir-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(80,80,240,.08),transparent);opacity:0;transition:opacity .3s}
 .dir-card:hover{border-color:rgba(80,80,240,.4);transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,.4)}
 .dir-card:hover::before{opacity:1}
-.dir-foto{width:52px;height:52px;border-radius:50%;background:rgba(30,58,110,.1);border:2px solid rgba(201,162,39,.4);display:flex;align-items:center;justify-content:center;margin-bottom:12px;overflow:hidden;position:relative}
-.dir-foto-initial{font-family:var(--ft);font-size:20px;font-weight:400;color:#1e3a6e}
+.dir-foto{width:52px;height:52px;border-radius:50%;background:rgba(201,162,39,.15);border:2px solid rgba(201,162,39,.4);display:flex;align-items:center;justify-content:center;margin-bottom:12px;overflow:hidden;position:relative}
+.dir-foto-initial{font-family:var(--ft);font-size:20px;font-weight:400;color:#c9a227}
 .dir-cargo{font-size:9.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--amarillo);margin-bottom:4px}
-.dir-nombre{font-family:var(--ft);font-size:15px;font-weight:600;color:#0d1b3e;line-height:1.25;margin-bottom:3px}
-.dir-inst{font-size:11.5px;color:#6b7280;line-height:1.45}
+.dir-nombre{font-family:var(--ft);font-size:15px;font-weight:600;color:#ffffff;line-height:1.25;margin-bottom:3px}
+.dir-inst{font-size:11.5px;color:rgba(255,255,255,.5);line-height:1.45}
 .dir-mail{display:inline-flex;align-items:center;gap:4px;font-size:11px;color:var(--azul-cl);text-decoration:none;margin-top:7px;transition:color .18s;word-break:break-all}
 .dir-mail:hover{color:var(--amarillo)}
-.inst-titulo{font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#9ca3af;margin-bottom:14px}
+.inst-titulo{font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.38);margin-bottom:14px}
 .inst-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.inst-card{background:#ffffff;border:1px solid #e5e7eb;border-radius:var(--r);padding:14px;display:flex;align-items:center;gap:10px;transition:border-color .2s,background .2s;box-shadow:0 1px 3px rgba(0,0,0,.04)}
-.inst-card:hover{border-color:#c9a227;background:#fffdf4}
-.inst-logo{width:38px;height:38px;border-radius:8px;background:rgba(30,58,110,.1);border:1px solid rgba(30,58,110,.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:9px;font-weight:700;color:#1e3a6e;letter-spacing:.04em}
-.inst-nom{font-size:12.5px;font-weight:500;color:#374151;line-height:1.4}
-.com-nota{font-size:12px;color:#6b7280;margin-top:12px;line-height:1.6}
-.com-nota a{color:#1e3a6e;text-decoration:none}
+.inst-card{background:rgba(255,255,255,.04);border:1px solid rgba(201,162,39,.15);border-radius:var(--r);padding:14px;display:flex;align-items:center;gap:10px;transition:border-color .2s,background .2s}
+.inst-card:hover{border-color:#c9a227;background:rgba(201,162,39,.08)}
+.inst-logo{width:38px;height:38px;border-radius:8px;background:rgba(201,162,39,.15);border:1px solid rgba(201,162,39,.3);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:9px;font-weight:700;color:#c9a227;letter-spacing:.04em}
+.inst-nom{font-size:12.5px;font-weight:500;color:rgba(255,255,255,.75);line-height:1.4}
+.com-nota{font-size:12px;color:rgba(255,255,255,.4);margin-top:12px;line-height:1.6}
+.com-nota a{color:#c9a227;text-decoration:none}
 .com-nota a:hover{color:var(--amarillo)}
 
 /* ════════════
    CONTACTO
 ════════════ */
-.sec-cont{background:#ffffff}
+.sec-cont{background:#ffffff;border-top:1px solid #e5e7eb}
 .sec-cont::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 50% 50% at 20% 80%,rgba(30,58,110,.05),transparent 55%);pointer-events:none}
 .cont-grid{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:start;margin-top:46px}
 .cont-items{display:flex;flex-direction:column;gap:18px}
@@ -215,7 +217,7 @@ body{font-family:var(--fb);font-weight:300;color:var(--blanco-c);background:var(
 .cont-ico{width:40px;height:40px;background:rgba(30,58,110,.08);border:1px solid rgba(30,58,110,.15);border-radius:9px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s,border-color .2s}
 .cont-item:hover .cont-ico{background:rgba(80,80,240,.2);border-color:var(--azul-cic)}
 .cont-lbl{font-size:10px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:#9ca3af;margin-bottom:3px}
-.cont-val{font-size:14px;color:#374151;line-height:1.55}
+.cont-val{font-size:14.5px;color:#1a202c;line-height:1.55}
 .cont-val a{color:var(--azul-cl);text-decoration:none;border-bottom:1px solid rgba(80,80,240,.25);transition:color .18s,border-color .18s}
 .cont-val a:hover{color:var(--amarillo);border-bottom-color:var(--amarillo)}
 .cont-btns{display:flex;flex-direction:column;gap:10px;margin-top:4px}
@@ -226,18 +228,19 @@ body{font-family:var(--fb);font-weight:300;color:var(--blanco-c);background:var(
 .mapa-wrap{border-radius:14px;overflow:hidden;border:1px solid #e5e7eb;box-shadow:0 4px 24px rgba(30,58,110,.12)}
 .llegada{background:#f9fafb;border:1px solid #e5e7eb;border-radius:var(--r);padding:18px 20px;margin-top:14px}
 .llegada h4{font-family:var(--ft);font-size:16px;font-weight:600;color:#0d1b3e;margin-bottom:7px}
-.llegada p{font-size:13px;color:#374151;line-height:1.72}
+.llegada p{font-size:13px;color:#2d3748;line-height:1.72}
 .llegada a{color:var(--azul-cl);text-decoration:none}
 .llegada a:hover{color:var(--amarillo)}
 
 /* ════════════
    CTA FINAL
 ════════════ */
-.sec-cta{background:#f7f5f0;border-top:1px solid var(--borde);border-bottom:1px solid var(--borde);text-align:center;padding:clamp(70px,9vw,100px) var(--px);position:relative;overflow:hidden}
+.sec-cta{background:#122247;border-top:1px solid var(--borde);border-bottom:1px solid var(--borde);text-align:center;padding:clamp(70px,9vw,100px) var(--px);position:relative;overflow:hidden}
 .sec-cta::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 70% at 50% 50%,rgba(80,80,240,.1),transparent 60%);pointer-events:none}
 .sec-cta-inner{position:relative;z-index:1;max-width:640px;margin:0 auto}
+.sec-cta .h2{color:#ffffff}
 .sec-cta .h2{margin-bottom:18px}
-.sec-cta p{font-size:clamp(15px,1.5vw,17px);color:#374151;line-height:1.78;margin-bottom:36px}
+.sec-cta p{font-size:clamp(15px,1.5vw,17px);color:rgba(255,255,255,.65);line-height:1.78;margin-bottom:36px}
 .cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
 
 /* ════════════
@@ -362,7 +365,7 @@ footer{background:#0d1b3e;border-top:1px solid var(--borde)}
     <!-- Canvas logo 3D interactivo -->
     <div class="rv">
       <canvas id="logo-canvas" aria-label="Visualización 3D del diagrama del Punto de Fermat, símbolo del CIC" role="img"></canvas>
-      <p style="font-size:10.5px;color:rgba(255,255,255,.25);text-align:center;margin-top:8px">Arrastra para rotar · El Punto de Fermat en 3D</p>
+      <p style="font-size:10.5px;color:rgba(255,255,255,.35);text-align:center;margin-top:8px">Arrastra para rotar · El Punto de Fermat en 3D</p>
     </div>
     <div class="logo3d-txt rv" style="transition-delay:.1s">
       <span class="etiq">Acerca del CIC</span>
@@ -378,7 +381,7 @@ footer{background:#0d1b3e;border-top:1px solid var(--borde)}
         <div class="ldato"><div class="ldato-n">4</div><div class="ldato-l">Miembros institucionales</div></div>
         <div class="ldato"><div class="ldato-n">5</div><div class="ldato-l">Países representados</div></div>
       </div>
-      <a href="http://www.cicc.unam.mx/mission.html" style="display:inline-flex;align-items:center;gap:6px;color:var(--azul-cl);font-size:13.5px;text-decoration:none;border-bottom:1px solid rgba(80,80,240,.3);padding-bottom:2px;margin-top:16px;transition:color .2s,border-color .2s" target="_blank" rel="noopener">
+      <a href="http://www.cicc.unam.mx/mission.html" style="display:inline-flex;align-items:center;gap:6px;color:#c9a227;font-size:13.5px;text-decoration:none;border-bottom:1px solid rgba(201,162,39,.4);padding-bottom:2px;margin-top:16px;transition:color .2s,border-color .2s" target="_blank" rel="noopener">
         Misión completa
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
@@ -486,9 +489,9 @@ footer{background:#0d1b3e;border-top:1px solid var(--borde)}
             <div class="dir-nombre">Dr. Thomas Henry Seligman Schurch</div>
             <div class="dir-inst">ICF UNAM, Cuernavaca</div>
           </div>
-          <div class="dir-card" style="border-color:rgba(201,162,39,.25);background:rgba(201,162,39,.04)">
+          <div class="dir-card" style="border-color:rgba(201,162,39,.3);background:rgba(201,162,39,.08)">
             <div style="font-size:9.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--amarillo);margin-bottom:6px">Administración</div>
-            <div style="font-family:var(--ft);font-size:14.5px;color:var(--blanco);margin-bottom:4px">WhatsApp</div>
+            <div style="font-family:var(--ft);font-size:14.5px;color:#fff;margin-bottom:4px">WhatsApp</div>
             <a href="https://wa.me/527776500712" class="dir-mail" style="color:var(--amarillo)" aria-label="WhatsApp del CIC">777 650 0712</a>
             <div style="font-family:var(--ft);font-size:14.5px;color:var(--blanco);margin:8px 0 4px">Correo</div>
             <a href="mailto:cicadmon1@gmail.com" class="dir-mail" style="color:var(--amarillo)" aria-label="Correo administración CIC">cicadmon1@gmail.com</a>
@@ -508,9 +511,9 @@ footer{background:#0d1b3e;border-top:1px solid var(--borde)}
           <div class="inst-card"><div class="inst-logo" aria-hidden="true">CIC</div><div class="inst-nom">Coordinación de la Investigación Científica, UNAM</div></div>
         </div>
         <p class="com-nota" style="margin-top:14px">Los logotipos institucionales se integrarán al recibir los archivos oficiales.</p>
-        <div style="margin-top:28px;padding:20px;background:rgba(30,58,110,.05);border:1px solid rgba(30,58,110,.15);border-radius:var(--r)">
+        <div style="margin-top:28px;padding:20px;background:rgba(201,162,39,.08);border:1px solid rgba(201,162,39,.2);border-radius:var(--r)">
           <div style="font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#c9a227;margin-bottom:8px">Visión</div>
-          <p style="font-family:var(--ft);font-size:16px;font-style:italic;color:#0d1b3e;line-height:1.6">Ser un centro de referencia nacional e internacional para la realización de encuentros científicos, reconocido por conectar personas, instituciones y disciplinas.</p>
+          <p style="font-family:var(--ft);font-size:16px;font-style:italic;color:rgba(255,255,255,.85);line-height:1.6">Ser un centro de referencia nacional e internacional para la realización de encuentros científicos, reconocido por conectar personas, instituciones y disciplinas.</p>
         </div>
       </div>
     </div>
