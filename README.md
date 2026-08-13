@@ -373,3 +373,8 @@ Todas las páginas del sitio `http://www.cicc.unam.mx/` que fueron consultadas y
 ---
 
 *© Centro Internacional de Ciencias A.C. Todos los derechos reservados.*
+
+---
+
+<!-- Prueba de sincronización local ↔ remoto — 2026-08-13 -->
+
