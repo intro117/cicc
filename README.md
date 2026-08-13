@@ -1,8 +1,8 @@
 # Centro Internacional de Ciencias A.C. — Sitio Web Institucional
 
-**URL en producción:** https://intro117.github.io/cicc/  
+**URL en producción:** https://cicc.org.mx/ (dominio propio, Cloudflare Pages) — respaldo: https://intro117.github.io/cicc/  
 **Repositorio:** github.com/intro117/cicc  
-**Rama activa:** `main` (GitHub Pages desde raíz `/`)
+**Rama activa:** `main` (deploy automático vía Cloudflare Pages en cada push; GitHub Pages se mantiene activo como respaldo)
 
 ---
 
@@ -320,7 +320,7 @@ Tipos disponibles: `t-conf` (conferencia), `t-tall` (taller), `t-esc` (escuela),
 - [ ] Logotipos oficiales: AMC, UAEM, UNAM, Coordinación CIC
 - [ ] Usuario de Instagram (si aplica)
 - [ ] Actividades confirmadas del año académico 2027
-- [ ] Decisión sobre dominio definitivo: `cicc.unam.mx` (gestión UNAM en proceso) o dominio propio `.org`
+- [x] Decisión sobre dominio definitivo: `cicc.org.mx` adquirido, sitio publicado vía Cloudflare Pages
 
 ---
 
@@ -373,8 +373,4 @@ Todas las páginas del sitio `http://www.cicc.unam.mx/` que fueron consultadas y
 ---
 
 *© Centro Internacional de Ciencias A.C. Todos los derechos reservados.*
-
----
-
-<!-- Prueba de sincronización local ↔ remoto — 2026-08-13 -->
 
