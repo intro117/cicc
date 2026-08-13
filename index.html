@@ -337,6 +337,44 @@ footer{background:var(--bg-osc3);border-top:1px solid var(--borde-osc)}
   .ft-marca{grid-column:auto}
   #btn-top{bottom:16px;right:16px}
 }
+
+/* ══ SERVICIOS ══ */
+.sec-srv{background:var(--bg-cla);border-top:1px solid var(--borde-cla)}
+.srv-intro{max-width:640px;margin-bottom:52px}
+.srv-intro p{font-size:15px;color:var(--txt-cla-3);line-height:1.78;margin-top:10px}
+.srv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:20px}
+.srv-card{border-radius:16px;overflow:hidden;border:1px solid var(--borde-cla);background:var(--bg-cla);box-shadow:0 2px 8px rgba(27,58,75,.07);transition:transform .28s,box-shadow .28s,border-color .28s;display:flex;flex-direction:column}
+.srv-card:hover{transform:translateY(-6px);box-shadow:0 16px 40px rgba(27,58,75,.13);border-color:var(--aqua)}
+.srv-img-wrap{position:relative;overflow:hidden;height:220px;background:var(--bg-osc2)}
+.srv-img-wrap img{width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .5s ease;display:block}
+.srv-card:hover .srv-img-wrap img{transform:scale(1.05)}
+.srv-img-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(15,37,53,.65) 0%,transparent 50%);pointer-events:none}
+.srv-badge{position:absolute;top:14px;left:14px;font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;padding:4px 10px;border-radius:20px;background:rgba(126,200,200,.88);color:var(--bg-osc3)}
+.srv-body{padding:22px 20px 24px;flex:1;display:flex;flex-direction:column}
+.srv-icono{width:40px;height:40px;border-radius:10px;background:var(--bg-cla2);border:1px solid var(--borde-cla);display:flex;align-items:center;justify-content:center;margin-bottom:14px;flex-shrink:0}
+.srv-tit{font-family:var(--ft);font-size:20px;font-weight:600;color:var(--txt-cla-2);margin-bottom:8px;line-height:1.2}
+.srv-desc{font-size:13px;color:var(--txt-cla-4);line-height:1.72;flex:1}
+.srv-caps{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.srv-cap{font-size:10.5px;color:var(--aqua-os);background:var(--bg-cla2);border:1px solid var(--borde-cla);padding:3px 9px;border-radius:4px;font-weight:500}
+.srv-link{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;color:var(--aqua-os);font-weight:600;text-decoration:none;margin-top:16px;border-bottom:1px solid rgba(42,122,122,.35);padding-bottom:2px;transition:color .18s,gap .18s,border-color .18s;width:fit-content}
+.srv-link:hover{color:var(--bg-osc3);gap:8px;border-bottom-color:var(--bg-osc3)}
+.srv-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.srv-card-h{border-radius:16px;overflow:hidden;border:1px solid var(--borde-cla);background:var(--bg-cla);box-shadow:0 2px 8px rgba(27,58,75,.07);transition:transform .28s,box-shadow .28s,border-color .28s;display:grid;grid-template-columns:280px 1fr}
+.srv-card-h:hover{transform:translateY(-5px);box-shadow:0 16px 40px rgba(27,58,75,.13);border-color:var(--aqua)}
+.srv-card-h .srv-img-wrap{height:100%;min-height:180px;border-radius:0}
+.srv-card-h .srv-img-wrap img{height:100%}
+.srv-nota{margin-top:28px;padding:18px 22px;background:var(--bg-cla2);border:1px solid var(--borde-cla);border-radius:var(--r);display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.srv-nota p{font-size:13px;color:var(--txt-cla-3);line-height:1.65;flex:1}
+.srv-nota strong{color:var(--txt-cla-2)}
+@media(max-width:900px){
+  .srv-grid{grid-template-columns:1fr 1fr}
+  .srv-grid-2{grid-template-columns:1fr}
+  .srv-card-h{grid-template-columns:1fr;grid-template-rows:200px 1fr}
+}
+@media(max-width:600px){
+  .srv-grid{grid-template-columns:1fr}
+  .srv-img-wrap{height:200px}
+}
 </style>
 </head>
 <body>
@@ -356,6 +394,7 @@ footer{background:var(--bg-osc3);border-top:1px solid var(--borde-osc)}
       <li><a href="#nosotros">Nosotros</a></li>
       <li><a href="#actividades">Actividades</a></li>
       <li><a href="#comunidad">Comunidad</a></li>
+      <li><a href="#servicios">Servicios</a></li>
       <li><a href="#contacto">Contacto</a></li>
       <li><a href="http://www.cicc.unam.mx/activities/" class="btn-nav" target="_blank" rel="noopener">Actividades históricas</a></li>
     </ul>
@@ -370,6 +409,7 @@ footer{background:var(--bg-osc3);border-top:1px solid var(--borde-osc)}
   <a href="#nosotros">Nosotros</a>
   <a href="#actividades">Actividades</a>
   <a href="#comunidad">Comunidad</a>
+  <a href="#servicios">Servicios</a>
   <a href="#contacto">Contacto</a>
   <a href="http://www.cicc.unam.mx/activities/" class="btn-mnav" target="_blank" rel="noopener">Actividades históricas →</a>
 </nav>
@@ -960,6 +1000,147 @@ footer{background:var(--bg-osc3);border-top:1px solid var(--borde-osc)}
           <a href="https://www.openstreetmap.org/?mlat=18.9850&mlon=-99.2307#map=15/18.9850/-99.2307" style="color:var(--aqua-os);text-decoration:none;border-bottom:1px solid rgba(42,122,122,.3)" target="_blank" rel="noopener">Ver mapa más grande</a>
         </p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     SERVICIOS — fondo claro
+══════════════════════════════ -->
+<section class="sec sec-srv" id="servicios" aria-labelledby="h-srv">
+  <div class="wrap">
+    <div class="rv">
+      <span class="etiq-cla">Nuestras instalaciones</span>
+      <h2 class="h2-cla" id="h-srv">Espacios diseñados para<br><em>la ciencia y el encuentro</em></h2>
+      <div class="srv-intro">
+        <p>El CIC pone a disposición de la comunidad científica un conjunto de instalaciones en el Campus UAEM-UNAM de Cuernavaca, disponibles para la organización de congresos, talleres, cursos, seminarios y reuniones de trabajo.</p>
+      </div>
+    </div>
+
+    <!-- Fila superior: 3 cards -->
+    <div class="srv-grid">
+      <div class="srv-card rv">
+        <div class="srv-img-wrap">
+          <img src="fotos/IMG_3746.jpg" alt="Salón principal del CIC con butacas individuales y pizarrón" loading="lazy" width="600" height="220">
+          <div class="srv-img-overlay" aria-hidden="true"></div>
+          <span class="srv-badge">Disponible</span>
+        </div>
+        <div class="srv-body">
+          <div class="srv-icono" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--aqua-os)" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <div class="srv-tit">Auditorio</div>
+          <p class="srv-desc">Salón equipado con sistema de sonido, pizarrón y proyector. Ideal para conferencias, presentaciones y sesiones plenarias de congresos y seminarios internacionales.</p>
+          <div class="srv-caps">
+            <span class="srv-cap">Proyector</span>
+            <span class="srv-cap">Sonido</span>
+            <span class="srv-cap">Pizarrón</span>
+            <span class="srv-cap">~40 personas</span>
+          </div>
+          <a href="mailto:cicadmon1@gmail.com?subject=Solicitud%20de%20auditorio%20CIC" class="srv-link" aria-label="Solicitar reserva del auditorio">Solicitar reserva <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+
+      <div class="srv-card rv" style="transition-delay:.07s">
+        <div class="srv-img-wrap">
+          <img src="fotos/IMG_3745.jpg" alt="Sala de reuniones con mesa de trabajo, libreros y obra de arte" loading="lazy" width="600" height="220">
+          <div class="srv-img-overlay" aria-hidden="true"></div>
+          <span class="srv-badge">Disponible</span>
+        </div>
+        <div class="srv-body">
+          <div class="srv-icono" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--aqua-os)" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="srv-tit">Oficinas y sala de trabajo</div>
+          <p class="srv-desc">Espacio de trabajo colaborativo con mesa de reuniones, acervo bibliográfico especializado y ambiente académico. Ideal para grupos de investigación en estancia.</p>
+          <div class="srv-caps">
+            <span class="srv-cap">Mesa grupal</span>
+            <span class="srv-cap">Biblioteca</span>
+            <span class="srv-cap">Wi-Fi</span>
+            <span class="srv-cap">~8 personas</span>
+          </div>
+          <a href="mailto:cicadmon1@gmail.com?subject=Solicitud%20de%20oficinas%20CIC" class="srv-link" aria-label="Consultar disponibilidad de oficinas">Consultar disponibilidad <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+
+      <div class="srv-card rv" style="transition-delay:.14s">
+        <div class="srv-img-wrap">
+          <img src="fotos/IMG_3747.jpg" alt="Salón amplio con butacas individuales durante taller académico" loading="lazy" width="600" height="220">
+          <div class="srv-img-overlay" aria-hidden="true"></div>
+          <span class="srv-badge">Disponible</span>
+        </div>
+        <div class="srv-body">
+          <div class="srv-icono" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--aqua-os)" stroke-width="1.8"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </div>
+          <div class="srv-tit">Salones</div>
+          <p class="srv-desc">Salones multiuso con butacas individuales, luz natural y acceso a jardines. Configurables para cursos, talleres o sesiones de trabajo simultáneas.</p>
+          <div class="srv-caps">
+            <span class="srv-cap">Luz natural</span>
+            <span class="srv-cap">Pizarrón</span>
+            <span class="srv-cap">Configurable</span>
+            <span class="srv-cap">~30 personas</span>
+          </div>
+          <a href="mailto:cicadmon1@gmail.com?subject=Solicitud%20de%20salones%20CIC" class="srv-link" aria-label="Solicitar información sobre los salones">Solicitar información <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fila inferior: 2 cards horizontales -->
+    <div class="srv-grid-2">
+      <div class="srv-card-h rv" style="transition-delay:.08s">
+        <div class="srv-img-wrap">
+          <img src="fotos/IMG_3790.jpg" alt="Corredor exterior del campus CIC con jardines y áreas comunes" loading="lazy" width="280" height="200">
+          <div class="srv-img-overlay" aria-hidden="true"></div>
+          <span class="srv-badge">Activo</span>
+        </div>
+        <div class="srv-body">
+          <div class="srv-icono" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--aqua-os)" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <div class="srv-tit">Cursos y Talleres</div>
+          <p class="srv-desc">El CIC organiza y aloja cursos intensivos, escuelas de verano y talleres especializados de física, matemáticas, biología, sistemas complejos, econofísica e inteligencia artificial, dirigidos a investigadores, posgrado y estudiantes avanzados.</p>
+          <div class="srv-caps">
+            <span class="srv-cap">Física</span>
+            <span class="srv-cap">Matemáticas</span>
+            <span class="srv-cap">Biología</span>
+            <span class="srv-cap">IA y datos</span>
+            <span class="srv-cap">Econofísica</span>
+          </div>
+          <a href="http://www.cicc.unam.mx/activities/" class="srv-link" target="_blank" rel="noopener" aria-label="Ver actividades académicas del CIC">Ver actividades pasadas <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+
+      <div class="srv-card-h rv" style="transition-delay:.16s">
+        <div class="srv-img-wrap">
+          <img src="fotos/IMG_3743.jpg" alt="Fachada principal del edificio CIC A.C. con escalinata y jardines" loading="lazy" width="280" height="200">
+          <div class="srv-img-overlay" aria-hidden="true"></div>
+          <span class="srv-badge">Campus UAEM-UNAM</span>
+        </div>
+        <div class="srv-body">
+          <div class="srv-icono" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--aqua-os)" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div class="srv-tit">Campus e instalaciones</div>
+          <p class="srv-desc">El CIC se encuentra dentro del Campus UAEM-UNAM en Cuernavaca, rodeado de amplios jardines y áreas verdes. El entorno favorece la concentración y el intercambio informal, parte fundamental de cada reunión científica.</p>
+          <div class="srv-caps">
+            <span class="srv-cap">Jardines</span>
+            <span class="srv-cap">Estacionamiento</span>
+            <span class="srv-cap">Acceso CDMX ~90 min</span>
+          </div>
+          <a href="#contacto" class="srv-link" aria-label="Ver cómo llegar al CIC">Cómo llegar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nota de contacto -->
+    <div class="srv-nota rv">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--aqua-os)" stroke-width="1.5" aria-hidden="true" style="flex-shrink:0"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      <p>Para reservar cualquier espacio o solicitar información sobre disponibilidad, comuníquese directamente con la administración del CIC. <strong>Las reuniones científicas generalmente duran entre tres días y tres semanas.</strong></p>
+      <a href="https://wa.me/527776500712?text=Hola%2C+me+interesa+informaci%C3%B3n+sobre+los+servicios+del+CIC" class="btn-wa" style="font-size:13px;padding:10px 18px;flex-shrink:0" target="_blank" rel="noopener" aria-label="Contactar CIC por WhatsApp">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+        WhatsApp
+      </a>
     </div>
   </div>
 </section>
